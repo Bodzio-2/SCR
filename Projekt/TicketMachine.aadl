@@ -28,5 +28,28 @@ public
 	device implementation Printer.impl
 	end Printer.impl;
 	
+	device CoinSlot
+		features
+			CurrentBalance: out data port CurrencyType;
+			StoredTotal: out data port CurrencyType;
+	end CoinSlot;
+	
+	device implementation CoinSlot.impl
+	end CoinSlot.impl;
+	
+	device CardTerminal
+		features
+			PaymentInformation: in data port String;
+			PaymentStatus: out data port String;
+	end CardTerminal;
+	
+	device implementation CardTerminal.impl
+	end CardTerminal.impl;
+	
+	device TouchPanel
+	end TouchPanel;
+	
+	device implementation TouchPanel.impl
+	end TouchPanel.impl;
 	
 end TicketMachine;
