@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="59b51333-5e56-4b6a-baf4-19746ec5283c" manual="true">
+    <element uuid="a8afa3d6-40f9-4938-9cb6-c284fec727aa" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>cpu</seg>
+      </bo>
+      <position x="12.0" y="38.0"/>
+      <size width="78.0" height="35.0"/>
+    </element>
+    <element uuid="78ee4e62-9967-4d86-9202-f2ecac43df06" manual="true">
+      <element uuid="d00daea1-bc5d-4ddb-9b37-8ed757b6aaa4" manual="true">
+        <element uuid="514dd2cc-0ec0-45fa-a4ef-8209870e0667" manual="true" dockArea="left">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>pobierz</seg>
+          </bo>
+          <position y="10.0"/>
+        </element>
+        <element uuid="b54ee009-3274-4b78-934d-fa927b6cbc6d" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>deployment_properties::actual_processor_binding</seg>
+            <seg>a8afa3d6-40f9-4938-9cb6-c284fec727aa</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>component_instance</seg>
+          <seg>kons</seg>
+        </bo>
+        <position x="235.0" y="38.0"/>
+        <size width="220.0" height="60.0"/>
+      </element>
+      <element uuid="bf66691c-32af-4f51-b00c-923a5d321f5f" manual="true">
+        <element uuid="e2ff46a2-572e-416c-ab01-9f761be89655" manual="true" dockArea="right">
+          <bo>
+            <seg>org.osate.ge.diagrams.instance</seg>
+            <seg>feature_instance</seg>
+            <seg>wstaw</seg>
+          </bo>
+          <position x="144.0" y="10.0"/>
+        </element>
+        <element uuid="1cac6cd4-377f-4ecf-96a1-defbc98a3845" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>deployment_properties::actual_processor_binding</seg>
+            <seg>a8afa3d6-40f9-4938-9cb6-c284fec727aa</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>component_instance</seg>
+          <seg>prod</seg>
+        </bo>
+        <position x="12.0" y="38.0"/>
+        <size width="203.0" height="60.0"/>
+      </element>
+      <element uuid="03f41ef7-dc42-4b08-84ff-ca7ad35117b0" manual="true">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>connection_reference</seg>
+          <seg>pk_conn : prod_consum_impl_instance.process1.prod.wstaw -> prod_consum_impl_instance.process1.kons.pobierz</seg>
+        </bo>
+      </element>
+      <element uuid="93003cff-81ca-46bc-8c18-7267883d1b5b" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_processor_binding</seg>
+          <seg>a8afa3d6-40f9-4938-9cb6-c284fec727aa</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>process1</seg>
+      </bo>
+      <position x="78.0" y="188.0"/>
+      <size width="707.0" height="256.0"/>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab4/instances/lab_pak_prod_consum_impl_instance.aaxl2</seg>
+    </bo>
+    <position x="30.0" y="30.0"/>
+    <size width="859.0" height="489.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties>
+      <property>deployment_properties::actual_processor_binding</property>
+    </enabledAadlProperties>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab4/instances/lab_pak_prod_consum_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>

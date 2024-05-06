@@ -1,0 +1,90 @@
+
+package TempCtl
+public
+	with Base_Types;
+	with Data_Model;
+	data TemperatureType
+		properties
+			Data_Model::Data_Representation => Integer;
+	end TemperatureType;
+	
+	data implementation TemperatureType.impl
+	end TemperatureType.impl;
+	
+	device TempSensor
+		features
+			Temp: out data port TemperatureType;
+	end TempSensor;
+	
+	device implementation TempSensor.impl
+	end TempSensor.impl;
+	
+	device Radiator
+		features OnOffRad: in data port Base_Types::Boolean;
+	end Radiator;
+	
+	device implementation Radiator.impl
+	end Radiator.impl;
+	
+	thread thrSensor
+		features
+			TempIn: in data port TemperatureType;
+			TempOut: out data port TemperatureType;
+	end thrSensor;
+	
+	thread implementation thrSensor.impl
+	end thrSensor.impl;
+	
+	thread thrCtl
+		features
+			TempIn: in data port TemperatureType;
+			onRadOut: out data port Base_Types::Boolean;
+	end thrCtl;
+	
+	thread implementation thrCtl.impl
+	end thrCtl.impl;
+	
+	thread thrRad
+		features
+			onRadIn: in data port Base_Types::Boolean;
+			onRadOut: out data port Base_Types::Boolean;
+	end thrRad;
+	
+	thread implementation thrRad.impl
+	end thrRad.impl;
+	
+	
+	
+	process proc
+		features
+			TempIn: in data port TemperatureType;
+			onRadOut: out data port Base_Types::Boolean;
+	end proc;
+	
+	process implementation proc.impl
+		subcomponents
+			tTemp: thread thrSensor.impl;
+			tCtl: thread thrCtl.impl;
+			tRad: thread thrRad.impl;
+		connections
+			tempDevConn: port TempIn -> tTemp.TempIn;
+			tempConn: port tTemp.TempOut -> tCtl.TempIn;
+			radConn: port tCtl.onRadOut -> tRad.onRadIn;
+			radDevConn: port tRad.onRadOut -> onRadOut;
+	end proc.impl;
+	
+	system SysTemp
+	end SysTemp;
+	
+	system implementation SysTemp.impl
+		subcomponents
+			thisCtlProc: process proc.impl;
+			thisSensor: device TempSensor.impl;
+			thisRadiator: device Radiator.impl;
+		connections
+			tempConn: port thisSensor.Temp -> thisCtlProc.TempIn;
+			radConn: port thisCtlProc.onRadOut -> thisRadiator.OnOffRad; 
+	end SysTemp.impl;
+	
+	
+end TempCtl;

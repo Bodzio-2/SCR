@@ -1,0 +1,56 @@
+package Lab_pak
+public
+	with Base_Types;
+	
+	
+	thread producent
+	  features
+	    Wstaw : out data port Base_Types::Character; -- np. Base_Types::Character;
+	  properties
+	    Dispatch_Protocol => Periodic;
+	    Dispatch_Offset => 2ms;
+	    Deadline => 15ms;	
+	    Period => 20ms;
+	    Compute_Execution_Time => 0ms..2ms;	
+	end producent;
+	 
+	thread implementation producent.impl
+	 
+	end producent.impl;
+	
+	thread konsument
+	  features
+	    Pobierz : in data port Base_Types::Character; -- np. Base_Types::Character;
+	  properties
+	    Dispatch_Protocol => Periodic;
+	    Dispatch_Offset => 	2ms;
+	    Deadline => 15ms;	
+	    Period => 20ms;
+	    Compute_Execution_Time => 0ms..2ms;	
+	end konsument;
+	 
+	thread implementation konsument.impl
+	 
+	end konsument.impl;
+	
+	process proc
+	end proc;
+	 
+	process implementation proc.impl
+	   subcomponents
+	     Prod : thread producent.impl;
+	     Kons : thread konsument.impl;
+	   connections
+    	 pk_conn : port Prod.Wstaw -> Kons.Pobierz;
+	end proc.impl;
+	
+	
+	system Prod_Consum
+	end Prod_Consum;
+	 
+	system implementation Prod_Consum.impl
+	  subcomponents
+	    process1 : process proc.impl;
+	    
+	end Prod_Consum.impl;
+end Lab_pak;

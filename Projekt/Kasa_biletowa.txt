@@ -1,0 +1,26 @@
+Panel dotykowy
+ekran
+płatność zbliżeniowa
+drukarka biletów/paragonów
+moduł płatności monetami
+moduł GSM
+procesor
+
+
+processor - corei5
+bus - main_bus
+memory - ram
+process - main_process
+
+thread - touch_controller
+thread - user_interface
+thread - printer_controller
+thread - payment_controller
+thread - ticket_seller
+
+device - touch_panel
+device - lcd_screen
+device - printer
+device - coin_slot
+device - card_terminal
+device - gsm_antenna

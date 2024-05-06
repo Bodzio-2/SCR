@@ -1,0 +1,32 @@
+package TicketMachine
+public
+	with Base_Types;
+	with Data_Model;
+	
+	data CurrencyType
+		properties
+			Data_Model::Data_Representation => Fixed;
+	end CurrencyType;
+	
+	data implementation CurrencyType.impl
+	end CurrencyType.impl;
+	
+	data PrinterData
+		properties
+			Data_Model::Data_Representation => String;
+	end PrinterData;
+	
+	data implementation PrinterData.impl
+	end PrinterData.impl;
+	
+	device Printer
+		features
+			PrintData: in data port PrinterData;
+			PrintComplete: out data port Base_Types::Boolean;
+	end Printer;
+	
+	device implementation Printer.impl
+	end Printer.impl;
+	
+	
+end TicketMachine;
