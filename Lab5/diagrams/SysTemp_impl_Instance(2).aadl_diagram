@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="08802463-27ef-424f-ab1e-171d9f0a7291" manual="true">
+    <element uuid="b6bf9136-6034-48ba-8fa4-53b103f2c576" manual="true">
+      <element uuid="8984d2e9-0551-41e3-b67d-787f09a2ae1d" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>ctl_cpu</seg>
+      </bo>
+      <position x="162.0" y="38.0"/>
+      <size width="177.0" height="60.0"/>
+    </element>
+    <element uuid="fe8076ba-3fa4-494b-935b-74890f207a03" manual="true">
+      <element uuid="053f4a46-50b2-4707-be32-9f8621971255" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ba1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>stand_memory</seg>
+      </bo>
+      <position x="359.0" y="38.0"/>
+      <size width="238.0" height="60.0"/>
+    </element>
+    <element uuid="53bbcc62-7eff-4609-b421-42640dfc4a00" manual="true">
+      <element uuid="76ded735-03bc-4938-9dbd-f930a71e2dfd" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>onradout</seg>
+        </bo>
+        <position x="211.0" y="10.0"/>
+      </element>
+      <element uuid="c0769931-f868-4ba3-a3b5-09976e3b2b91" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>tempin</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="03938035-5585-449c-a4ce-00ce1a9eefcf" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_processor_binding</seg>
+          <seg>b6bf9136-6034-48ba-8fa4-53b103f2c576</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisctlproc</seg>
+      </bo>
+      <position x="258.0" y="118.0"/>
+      <size width="292.0" height="60.0"/>
+    </element>
+    <element uuid="5fcbe45c-64f7-4586-84b5-4a389f117217" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisethernet</seg>
+      </bo>
+      <position x="12.0" y="38.0"/>
+      <size width="130.0" height="35.0"/>
+    </element>
+    <element uuid="68a22cad-e400-4785-9af5-6786b63f9c25" manual="true">
+      <element uuid="6e22cd36-0fee-48ed-8ae7-71555bc91d60" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>onoffrad</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisradiator</seg>
+      </bo>
+      <position x="570.0" y="118.0"/>
+      <size width="289.0" height="60.0"/>
+    </element>
+    <element uuid="07a9e6b6-0e62-46f2-8ae7-0c24828c9434" manual="true">
+      <element uuid="0379b23d-eb7d-4c74-a1f1-a485d6e10cc9" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ba1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="320cf5e1-fd0a-4078-a2e8-35ca07f0ccda" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>temp</seg>
+        </bo>
+        <position x="174.0" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thissensor</seg>
+      </bo>
+      <position x="12.0" y="118.0"/>
+      <size width="226.0" height="60.0"/>
+    </element>
+    <element uuid="61b53aa8-fa1a-4b69-9026-92f68c470269" manual="true">
+      <element uuid="148177c9-b2da-4ba9-90d5-189d9d445ed3" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_connection_binding</seg>
+          <seg>5fcbe45c-64f7-4586-84b5-4a389f117217</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>radconn : systemp_impl_instance.thisctlproc.onradout -> systemp_impl_instance.thisradiator.onoffrad</seg>
+      </bo>
+    </element>
+    <element uuid="643695f3-e25a-407b-9c9b-b34636617eb0" manual="true">
+      <element uuid="de9af1d6-d0bf-48e6-865e-4279630e5412" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_connection_binding</seg>
+          <seg>5fcbe45c-64f7-4586-84b5-4a389f117217</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>tempconn : systemp_impl_instance.thissensor.temp -> systemp_impl_instance.thisctlproc.tempin</seg>
+      </bo>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab5/instances/tempctl_systemp_impl_instance.aaxl2</seg>
+    </bo>
+    <position x="20.0" y="30.0"/>
+    <size width="871.0" height="190.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties>
+      <property>deployment_properties::actual_processor_binding</property>
+      <property>deployment_properties::actual_connection_binding</property>
+    </enabledAadlProperties>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab5/instances/tempctl_systemp_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>

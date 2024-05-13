@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="ad92b7af-f5a2-4179-a048-4dbd30a5fcd1" manual="true">
+    <element uuid="758b70e3-9429-4290-8c38-699e694d19e2" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>cpu</seg>
+      </bo>
+      <position x="12.0" y="38.0"/>
+      <size width="78.0" height="35.0"/>
+    </element>
+    <element uuid="aa7ae844-ac8f-4a5b-92f1-d17ec42400d5" manual="true">
+      <element uuid="2b1c91bc-4022-4039-b575-08430c433511" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>sample</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>proc</seg>
+      </bo>
+      <position x="296.0" y="93.0"/>
+      <size width="209.0" height="60.0"/>
+    </element>
+    <element uuid="f76bef14-91e1-442f-8e41-c4f1ff7c033c" manual="true">
+      <element uuid="2bf47dc2-1cb3-45b0-b0f0-cc96bd1f17f1" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>sensorout</seg>
+        </bo>
+        <position x="184.0" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>sensor1</seg>
+      </bo>
+      <position x="12.0" y="93.0"/>
+      <size width="264.0" height="60.0"/>
+    </element>
+    <element uuid="c50f03e2-4978-4e61-b031-a8fbc346d5a6" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>cp1 : wsystem_impl_instance.sensor1.sensorout -> wsystem_impl_instance.proc.sample</seg>
+      </bo>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab8/instances/wsys_wsystem_impl_instance.aaxl2</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="517.0" height="165.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab8/instances/wsys_wsystem_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>

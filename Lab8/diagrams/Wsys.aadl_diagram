@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="14dd57ed-51a1-4cb4-9df4-78123a0df9f9" manual="true">
+    <element uuid="e9166e14-5be4-4952-8e6e-dd049e211f16" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>app</seg>
+      </bo>
+      <position x="204.0" y="148.0"/>
+      <size width="86.0" height="35.0"/>
+    </element>
+    <element uuid="54b6afce-352d-4746-b005-9a1ceebe5319" manual="true">
+      <element uuid="fbdb4f42-f408-47b1-ba7f-befb837ed4f4" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="200.0" y="177.5"/>
+          <point x="212.0" y="177.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>app.impl</seg>
+      </bo>
+      <position x="66.0" y="148.0"/>
+      <size width="118.0" height="35.0"/>
+    </element>
+    <element uuid="7c89beac-f727-4930-9915-bff463c5565b" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>controlapp</seg>
+      </bo>
+      <position x="213.0" y="93.0"/>
+      <size width="130.0" height="35.0"/>
+    </element>
+    <element uuid="7974ce5a-fc76-4469-8bc1-0d4e466fc1c1" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>powerpc</seg>
+      </bo>
+      <position x="188.0" y="38.0"/>
+      <size width="108.0" height="35.0"/>
+    </element>
+    <element uuid="1958a0fd-ea05-4085-8b38-e24d09a7cbf7" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>sensor</seg>
+      </bo>
+      <position x="66.0" y="38.0"/>
+      <size width="102.0" height="35.0"/>
+    </element>
+    <element uuid="ce40c948-0e60-432e-b15e-cbf6eb8e55e2" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>sensordata</seg>
+      </bo>
+      <position x="66.0" y="93.0"/>
+      <size width="127.0" height="35.0"/>
+    </element>
+    <element uuid="7d0180cc-ab52-421a-aa89-a1cc666ba1c2" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>wsystem</seg>
+      </bo>
+      <position x="237.0" y="203.0"/>
+      <size width="114.0" height="35.0"/>
+    </element>
+    <element uuid="3f609d0a-7512-4b64-b18b-25d72bccb950" manual="true">
+      <element uuid="10330516-c287-45a9-ac3c-0ec71e887d01" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="233.0" y="232.5"/>
+          <point x="245.0" y="232.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>wsystem.impl</seg>
+      </bo>
+      <position x="66.0" y="203.0"/>
+      <size width="151.0" height="35.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>wsys</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="363.0" height="250.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>wsys</seg>
+    </context>
+  </config>
+</diagram:Diagram>

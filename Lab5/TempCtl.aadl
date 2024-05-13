@@ -1,6 +1,7 @@
 
 package TempCtl
 public
+	with sei;
 	with Base_Types;
 	with Data_Model;
 	data TemperatureType
@@ -16,6 +17,7 @@ public
 			Temp: out data port TemperatureType;
 			BA1: requires bus access ethernet;
 		properties
+			SEI::GrossWeight => 0.09kg;
 			Dispatch_Protocol => Periodic;
 			Period => 20ms;
 	end TempSensor;
@@ -25,6 +27,8 @@ public
 	
 	device Radiator
 		features OnOffRad: in data port Base_Types::Boolean;
+		properties
+			SEI::GrossWeight => 1.0kg;
 	end Radiator;
 	
 	device implementation Radiator.impl
@@ -61,12 +65,16 @@ public
 	memory RAM
 		features
 			BA1: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 0.3kg;
 	end RAM;
 	
 	memory implementation RAM.Standard
 	end RAM.Standard;
 	
 	bus ethernet
+		properties
+			SEI::GrossWeight => 0.5kg;
 	end ethernet;
 	
 	bus implementation ethernet.Impl
@@ -96,6 +104,7 @@ public
 		features
 			eth: requires bus access ethernet;
 		properties
+			SEI::GrossWeight => 0.1kg;
 			Scheduling_Protocol => (Round_Robin_Protocol);
 			Clock_Period => 1 ms;
 			Timing_Properties::Processor_Capacity => 1.0 MIPS;
@@ -112,11 +121,19 @@ public
 			thisSensor: device TempSensor.impl;
 			thisRadiator: device Radiator.impl;
 			Stand_Memory: memory RAM.Standard;
+			thisEthernet: bus ethernet.impl;
 		connections
 			tempConn: port thisSensor.Temp -> thisCtlProc.TempIn;
 			radConn: port thisCtlProc.onRadOut -> thisRadiator.OnOffRad;
+			eth1: bus access thisSensor.BA1 -> thisEthernet;
+			eth2: bus access Stand_Memory.BA1 <-> thisEthernet;
+			ethProc: bus access Ctl_cpu.eth <-> thisEthernet;
 		properties
+			SEI::GrossWeight => 1.990kg;
 			Actual_Processor_Binding => (reference(Ctl_cpu)) applies to thisCtlProc;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to tempConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to radConn;
+			
 	end SysTemp.impl;
 	
 	

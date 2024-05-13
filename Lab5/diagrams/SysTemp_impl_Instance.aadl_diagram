@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="51e74f6b-baab-4402-a149-570aea7ce41e" manual="true">
+    <element uuid="524feb6d-62fe-4c9b-9d13-c0feb06565d2" manual="true">
+      <element uuid="0720501a-0136-4ce1-93ac-2c29964acd29" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>ctl_cpu</seg>
+      </bo>
+      <position x="12.0" y="38.0"/>
+      <size width="177.0" height="60.0"/>
+    </element>
+    <element uuid="3581a0c3-799b-4d90-950a-875bcb70c57a" manual="true">
+      <element uuid="d138d283-5987-4e23-88e5-a3442e269bfb" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ba1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>stand_memory</seg>
+      </bo>
+      <position x="209.0" y="38.0"/>
+      <size width="238.0" height="60.0"/>
+    </element>
+    <element uuid="ece81776-4f91-41ef-b5aa-db6cbb46ac3c" manual="true">
+      <element uuid="f0ca76ba-c8fa-4e7c-8eb4-62044a055f94" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>onradout</seg>
+        </bo>
+        <position x="211.0" y="10.0"/>
+      </element>
+      <element uuid="09f42458-1c84-4815-8468-c81a206ad179" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>tempin</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="219e0b5a-a01d-424c-a614-04d0129de683" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_processor_binding</seg>
+          <seg>524feb6d-62fe-4c9b-9d13-c0feb06565d2</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisctlproc</seg>
+      </bo>
+      <position x="258.0" y="118.0"/>
+      <size width="292.0" height="60.0"/>
+    </element>
+    <element uuid="ea2e52f0-ac4b-4702-9351-4a70b354af2a" manual="true">
+      <element uuid="869d2a79-20d2-4673-880a-aeec7a971dd5" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>onoffrad</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisradiator</seg>
+      </bo>
+      <position x="570.0" y="118.0"/>
+      <size width="289.0" height="60.0"/>
+    </element>
+    <element uuid="2f9e9a49-6bd4-476f-ac51-1281361d676f" manual="true">
+      <element uuid="1ba69b3f-2dfc-4e94-80ff-703e361406f5" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ba1</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="e56848f7-1afb-482f-93e8-9412fa159e6f" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>temp</seg>
+        </bo>
+        <position x="174.0" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thissensor</seg>
+      </bo>
+      <position x="12.0" y="118.0"/>
+      <size width="226.0" height="60.0"/>
+    </element>
+    <element uuid="ca49c60c-1aab-4e25-9df9-be5da9a2a709" manual="true">
+      <element uuid="4fe5a020-a084-4928-9536-384651b6e81d" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_connection_binding</seg>
+          <seg>51e74f6b-baab-4402-a149-570aea7ce41e</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>radconn : systemp_impl_instance.thisctlproc.onradout -> systemp_impl_instance.thisradiator.onoffrad</seg>
+      </bo>
+    </element>
+    <element uuid="a46b44c6-905c-47f1-833e-9a9ba44851e6" manual="true">
+      <element uuid="cd05470f-ed11-4491-aa7e-4638ba911b28" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>deployment_properties::actual_connection_binding</seg>
+          <seg>51e74f6b-baab-4402-a149-570aea7ce41e</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>tempconn : systemp_impl_instance.thissensor.temp -> systemp_impl_instance.thisctlproc.tempin</seg>
+      </bo>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab5/instances/tempctl_systemp_impl_instance.aaxl2</seg>
+    </bo>
+    <position x="12.0" y="12.0"/>
+    <size width="871.0" height="190.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties>
+      <property>deployment_properties::actual_memory_binding</property>
+      <property>deployment_properties::actual_processor_binding</property>
+      <property>deployment_properties::actual_connection_binding</property>
+    </enabledAadlProperties>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/lab5/instances/tempctl_systemp_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>
