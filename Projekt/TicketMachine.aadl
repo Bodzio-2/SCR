@@ -19,19 +19,60 @@ public
 	data implementation PrinterData.impl
 	end PrinterData.impl;
 	
+	data GsmData
+	end GsmData;
+	
+	data implementation GsmData.impl
+	end GsmData.impl;
+	
+	data TouchData
+	end TouchData;
+	
+	data implementation TouchData.impl
+	end TouchData.impl;
+	
+	bus ethernet
+	end ethernet;
+	
+	bus implementation ethernet.impl
+	end ethernet.impl;
+	
+	memory GenericRAM
+	end GenericRAM;	
+	
 	device Printer
 		features
 			PrintData: in data port PrinterData;
 			PrintComplete: out data port Base_Types::Boolean;
+			eth: requires bus access ethernet;
 	end Printer;
 	
 	device implementation Printer.impl
 	end Printer.impl;
 	
+	device TouchPanel
+		features
+			UIEvents: out data port TouchData;
+			eth: requires bus access ethernet;
+	end TouchPanel;
+	
+	device implementation TouchPanel.impl
+	end TouchPanel.impl;
+	
+	device Lcd
+		features
+			DispImg: in data port;
+			eth: requires bus access ethernet;
+	end Lcd;
+	
+	device implementation Lcd.impl
+	end Lcd.impl;
+	
 	device CoinSlot
 		features
-			CurrentBalance: out data port CurrencyType;
-			StoredTotal: out data port CurrencyType;
+			Enable: in data port Base_Types::Boolean;
+			CoinAmount: out data port CurrencyType;
+			eth: requires bus access ethernet;
 	end CoinSlot;
 	
 	device implementation CoinSlot.impl
@@ -39,17 +80,127 @@ public
 	
 	device CardTerminal
 		features
-			PaymentInformation: in data port String;
-			PaymentStatus: out data port String;
+			Enable: in data port Base_Types::Boolean;
+			PaymentInfo: in data port Base_Types::string;
+			eth: requires bus access ethernet;
 	end CardTerminal;
 	
 	device implementation CardTerminal.impl
 	end CardTerminal.impl;
 	
-	device TouchPanel
-	end TouchPanel;
+	device GsmAntenna
+		features
+			DataIn: in data port GsmData;
+			DataOut: out data port GsmData;
+			eth: requires bus access ethernet;
+	end GsmAntenna;
 	
-	device implementation TouchPanel.impl
-	end TouchPanel.impl;
+	device implementation GsmAntenna.impl
+	end GsmAntenna.impl;
 	
+	thread TouchController
+		features
+			UIEvents: in data port TouchData;
+	end TouchController;
+	
+	thread implementation TouchController.impl
+	end TouchController.impl;
+	
+	thread UserInterface
+		features
+			Display: out data port;
+	end UserInterface;
+	
+	thread implementation UserInterface.impl
+	end UserInterface.impl;
+	
+	thread PrinterController
+		features
+			Printer: out data port PrinterData;
+	end PrinterController;
+	
+	thread implementation PrinterController.impl
+	end PrinterController.impl;
+	
+	thread PaymentController
+		features
+			CoinSlotActivate: out data port Base_Types::Boolean;
+			CoinSlot: in data port CurrencyType;
+			CardTerminalActivate: out data port Base_Types::Boolean;
+			CardPaymentInfo: in out data port Base_Types::String;
+	end PaymentController;
+	
+	thread implementation PaymentController.impl
+	end PaymentController.impl;
+	
+	thread TicketSeller
+		features
+			Gsm: in out data port GsmData;
+	end TicketSeller;
+	
+	thread implementation TicketSeller.impl
+	end TicketSeller.impl;
+
+
+	processor corei5
+		features
+			eth: requires bus access ethernet;
+	end corei5;
+	
+	processor implementation corei5.impl
+	end corei5.impl;
+	
+
+	
+	process MainProc
+		features
+			touch: in data port TouchData;
+			display: out data port;
+			printer: out data port PrinterData;
+			gsm: in out data port GsmData;
+			coinActivate: out data port Base_Types::Boolean;
+			coin: in data port CurrencyType;
+			cardActivate: out data port Base_Types::Boolean;
+			card: in out data port Base_Types::String;
+	end MainProc;
+	
+	process implementation MainProc.impl
+		subcomponents
+			this_MainThr: thread TicketSeller.impl;
+			this_TouchThr: thread TouchController.impl;
+			this_UIThr: thread UserInterface.impl;
+			this_PrintThr: thread PrinterController.impl;
+			this_PayThr: thread PaymentController.impl;
+		connections
+			touchConn: port touch -> this_TouchThr.UIEvents;
+			displayConn: port this_UIThr.Display -> display;
+			printerConn: port this_PrintThr.Printer -> printer;
+			gsmConn: port this_MainThr.Gsm <-> gsm;
+			coinActivateConn: port this_PayThr.CoinSlotActivate -> coinActivate;
+			coinConn: port coin -> this_PayThr.CoinSlot;
+			cardActivateConn: port this_PayThr.CardTerminalActivate -> cardActivate;
+			cardConn: port card <-> this_PayThr.CardPaymentInfo;
+	end MainProc.impl;
+	
+	system TicketMachine
+	end TicketMachine;
+	
+	system implementation TicketMachine.impl
+		subcomponents
+			Main_cpu: processor corei5;
+			thisMainProc: process MainProc.impl;
+			thisPrinter: device Printer.impl;
+			thisTouchPanel: device TouchPanel.impl;
+			thisLcd: device Lcd.impl;
+			thisCoinSlot: device CoinSlot.impl;
+			thisCardTerminal: device CardTerminal.impl;
+			thisGsmAntenna: device GsmAntenna.impl;
+			thisEthernet: bus ethernet.impl;
+		connections
+			printerConn: port thisMainProc.printer -> thisPrinter.PrintData;
+			touchPanelConn: port thisTouchPanel.UIEvents -> thisMainProc.touch;
+			lcdConn: port thisMainProc.display -> thisLcd.DispImg;
+			coinActivateConn: port thisMainProc.coinActivate -> thisCoinSlot.Enable;
+			coinConn: port thisCoinSlot.CoinAmount -> thisMainProc.coin;
+	end TicketMachine.impl;
 end TicketMachine;
