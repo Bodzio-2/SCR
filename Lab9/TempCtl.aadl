@@ -1,7 +1,6 @@
-
 package TempCtl
 public
-	with sei;
+	with SEI_bootleg;
 	with Base_Types;
 	with Data_Model;
 	data TemperatureType
@@ -12,12 +11,21 @@ public
 	data implementation TemperatureType.impl
 	end TemperatureType.impl;
 	
+	bus ethernet
+		properties
+			 -- Transmission_Time => [Fixed => 1ns..2ns; PerByte => 5ns .. 6ns;];
+			 -- Period => 1ms;
+			SEI_bootleg::GrossWeight => 0.5kg;
+			SEI_bootleg::BandWidthCapacity => 2.0 MBytesps;
+			SEI_bootleg::BandWidthBudget => 200.0 KBytesps;
+	end ethernet;
+	
 	device TempSensor
 		features
 			Temp: out data port TemperatureType;
 			BA1: requires bus access ethernet;
 		properties
-			SEI::GrossWeight => 0.09kg;
+			SEI_bootleg::GrossWeight => 0.09kg;
 			Dispatch_Protocol => Periodic;
 			Period => 20ms;
 	end TempSensor;
@@ -28,7 +36,7 @@ public
 	device Radiator
 		features OnOffRad: in data port Base_Types::Boolean;
 		properties
-			SEI::GrossWeight => 1.0kg;
+			SEI_bootleg::GrossWeight => 1.0kg;
 	end Radiator;
 	
 	device implementation Radiator.impl
@@ -66,16 +74,12 @@ public
 		features
 			BA1: requires bus access ethernet;
 		properties
-			SEI::GrossWeight => 0.3kg;
+			SEI_bootleg::GrossWeight => 0.3kg;
 	end RAM;
 	
 	memory implementation RAM.Standard
 	end RAM.Standard;
 	
-	bus ethernet
-		properties
-			SEI::GrossWeight => 0.5kg;
-	end ethernet;
 	
 	bus implementation ethernet.Impl
 	end ethernet.Impl;
@@ -85,12 +89,14 @@ public
 		features
 			TempIn: in data port TemperatureType;
 			onRadOut: out data port Base_Types::Boolean;
+		properties
+			SEI_bootleg::MIPSBudget => 1.0 mips;
 	end proc;
 	
 	process implementation proc.impl
 		subcomponents
 			tTemp: thread thrSensor.impl;
-			tCtl: thread thrCtl.impl;card 
+			tCtl: thread thrCtl.impl; 
 			tRad: thread thrRad.impl;
 		connections
 			tempDevConn: port TempIn -> tTemp.TempIn;
@@ -104,7 +110,7 @@ public
 		features
 			eth: requires bus access ethernet;
 		properties
-			SEI::GrossWeight => 0.1kg;
+			SEI_bootleg::GrossWeight => 0.1kg;
 			Scheduling_Protocol => (Round_Robin_Protocol);
 			Clock_Period => 1 ms;
 			Timing_Properties::Processor_Capacity => 1.0 MIPS;
@@ -129,7 +135,7 @@ public
 			eth2: bus access Stand_Memory.BA1 <-> thisEthernet;
 			ethProc: bus access Ctl_cpu.eth <-> thisEthernet;
 		properties
-			SEI::GrossWeight => 1.990kg;
+			SEI_bootleg::GrossWeight => 1.990kg;
 			Actual_Processor_Binding => (reference(Ctl_cpu)) applies to thisCtlProc;
 			Actual_Connection_Binding => (reference(thisEthernet)) applies to tempConn;
 			Actual_Connection_Binding => (reference(thisEthernet)) applies to radConn;

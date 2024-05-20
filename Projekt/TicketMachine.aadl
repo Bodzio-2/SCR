@@ -72,6 +72,7 @@ public
 		features
 			Enable: in data port Base_Types::Boolean;
 			CoinAmount: out data port CurrencyType;
+			ReturnChange: in data port CurrencyType;
 			eth: requires bus access ethernet;
 	end CoinSlot;
 	
@@ -82,6 +83,7 @@ public
 		features
 			Enable: in data port Base_Types::Boolean;
 			PaymentInfo: in data port Base_Types::string;
+			PaymentSuccess: out data port Base_Types::Boolean;
 			eth: requires bus access ethernet;
 	end CardTerminal;
 	
@@ -90,8 +92,7 @@ public
 	
 	device GsmAntenna
 		features
-			DataIn: in data port GsmData;
-			DataOut: out data port GsmData;
+			DataInOut: in out data port GsmData;
 			eth: requires bus access ethernet;
 	end GsmAntenna;
 	
@@ -126,8 +127,10 @@ public
 		features
 			CoinSlotActivate: out data port Base_Types::Boolean;
 			CoinSlot: in data port CurrencyType;
+			ReturnCoinChange: out data port CurrencyType;
 			CardTerminalActivate: out data port Base_Types::Boolean;
-			CardPaymentInfo: in out data port Base_Types::String;
+			CardPaymentInfo: out data port Base_Types::String;
+			CardPaymentSuccess: in data port Base_Types::Boolean;
 	end PaymentController;
 	
 	thread implementation PaymentController.impl
@@ -160,8 +163,10 @@ public
 			gsm: in out data port GsmData;
 			coinActivate: out data port Base_Types::Boolean;
 			coin: in data port CurrencyType;
+			changeCoin: out data port CurrencyType;
 			cardActivate: out data port Base_Types::Boolean;
-			card: in out data port Base_Types::String;
+			card: out data port Base_Types::String;
+			cardSuccess: in data port Base_Types::Boolean;
 	end MainProc;
 	
 	process implementation MainProc.impl
@@ -178,8 +183,10 @@ public
 			gsmConn: port this_MainThr.Gsm <-> gsm;
 			coinActivateConn: port this_PayThr.CoinSlotActivate -> coinActivate;
 			coinConn: port coin -> this_PayThr.CoinSlot;
+			changeCoinConn: port this_PayThr.ReturnCoinChange -> changeCoin;
 			cardActivateConn: port this_PayThr.CardTerminalActivate -> cardActivate;
-			cardConn: port card <-> this_PayThr.CardPaymentInfo;
+			cardConn: port this_PayThr.CardPaymentInfo -> card;
+			cardSuccessConn: port cardSuccess -> this_PayThr.CardPaymentSuccess;
 	end MainProc.impl;
 	
 	system TicketMachine
@@ -202,5 +209,12 @@ public
 			lcdConn: port thisMainProc.display -> thisLcd.DispImg;
 			coinActivateConn: port thisMainProc.coinActivate -> thisCoinSlot.Enable;
 			coinConn: port thisCoinSlot.CoinAmount -> thisMainProc.coin;
+			retChangeConn: port thisMainProc.changeCoin -> thisCoinSlot.ReturnChange;
+			cardActivateConn: port thisMainProc.cardActivate -> thisCardTerminal.Enable;
+			cardConn: port thisMainProc.card -> thisCardterminal.PaymentInfo;
+			cardSucessConn: port thisCardTerminal.PaymentSuccess -> thisMainProc.cardSuccess;
+			gsmConn: port thisMainProc.gsm <-> thisGsmAntenna.DataInOut;
+		properties
+			Actual_Processor_Binding => (reference(Main_cpu)) applies to thisMainProc;
 	end TicketMachine.impl;
 end TicketMachine;
