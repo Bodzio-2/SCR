@@ -1,0 +1,14 @@
+Weight totals Report
+
+thisEthernet: [L] Sum of weights / gross weight is 0,600 kg (no limit specified)
+thisMarine: [L] Sum of weights / gross weight is 0,100 kg (no limit specified)
+thisPrinter: [L] Sum of weights / gross weight is 0,700 kg (no limit specified)
+thisTouchPanel: [L] Sum of weights / gross weight is 0,500 kg (no limit specified)
+thisLcd: [L] Sum of weights / gross weight is 0,770 kg (no limit specified)
+thisCoinSlot: [L] Sum of weights / gross weight is 1,100 kg (no limit specified)
+thisCardTerminal: [L] Sum of weights / gross weight is 0,350 kg (no limit specified)
+thisGsmAntenna: [L] Sum of weights / gross weight is 0,100 kg (no limit specified)
+thisRAM: [L] Sum of weights / gross weight is 0,100 kg (no limit specified)
+Main_cpu: [L] Sum of weights / gross weight is 0,050 kg (no limit specified)
+Warning! TicketMachine_impl_Instance: [G] Sum of weights (4,370 kg) less than gross weight of 4,370 kg (using gross weight)
+TicketMachine_impl_Instance: [A] Sum of weights (4,370 kg) is below weight limit of 5,000 kg (12,6 % Weight slack)

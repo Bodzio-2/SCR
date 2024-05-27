@@ -2,131 +2,156 @@ package TicketMachine
 public
 	with Base_Types;
 	with Data_Model;
-	
+	with sei;
+
 	data CurrencyType
 		properties
 			Data_Model::Data_Representation => Fixed;
 	end CurrencyType;
-	
+
 	data implementation CurrencyType.impl
 	end CurrencyType.impl;
-	
+
 	data PrinterData
 		properties
 			Data_Model::Data_Representation => String;
 	end PrinterData;
-	
+
 	data implementation PrinterData.impl
 	end PrinterData.impl;
-	
+
 	data GsmData
 	end GsmData;
-	
+
 	data implementation GsmData.impl
 	end GsmData.impl;
-	
+
 	data TouchData
 	end TouchData;
-	
+
 	data implementation TouchData.impl
 	end TouchData.impl;
-	
+
 	bus ethernet
+		properties
+			SEI::GrossWeight => 0.6kg;
+			Transmission_Time => [Fixed => 1ns..2ns; PerByte => 5ns ..6ns;];
+    		Period => 1 ms;
+    		SEI::BandWidthCapacity => 2.0 MBytesps;
+    		--SEI::BandWidthBudget => 200.0 KBytesps;
 	end ethernet;
-	
+
 	bus implementation ethernet.impl
 	end ethernet.impl;
-	
+
 	bus Marine
+		properties
+			SEI::GrossWeight => 0.1kg;
+			Transmission_Time => [Fixed => 1ns..2ns; PerByte => 1ns ..3ns;];
+    		Period => 1 us;
+    		SEI::BandWidthCapacity => 100.0 MBytesps;
+    		--SEI::BandWidthBudget => 1.0 MBytesps;
 	end Marine;
+
 	bus implementation Marine.Standard
 	end Marine.Standard;
-	
-	
+
 	device Printer
 		features
 			PrintData: in data port PrinterData;
 			PrintComplete: out data port Base_Types::Boolean;
 			eth: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 0.700kg;
 	end Printer;
-	
+
 	device implementation Printer.impl
 	end Printer.impl;
-	
+
 	device TouchPanel
 		features
 			UIEvents: out data port TouchData;
 			eth: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 0.500kg;
 	end TouchPanel;
-	
+
 	device implementation TouchPanel.impl
 	end TouchPanel.impl;
-	
+
 	device Lcd
 		features
 			DispImg: in data port;
 			eth: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 0.770kg;
 	end Lcd;
-	
+
 	device implementation Lcd.impl
 	end Lcd.impl;
-	
+
 	device CoinSlot
 		features
 			Enable: in data port Base_Types::Boolean;
 			CoinAmount: out data port CurrencyType;
 			ReturnChange: in data port CurrencyType;
 			eth: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 1.10kg;
 	end CoinSlot;
-	
+
 	device implementation CoinSlot.impl
 	end CoinSlot.impl;
-	
+
 	device CardTerminal
 		features
 			Enable: in data port Base_Types::Boolean;
 			PaymentInfo: in data port Base_Types::string;
 			PaymentSuccess: out data port Base_Types::Boolean;
 			eth: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 0.35kg;
 	end CardTerminal;
-	
+
 	device implementation CardTerminal.impl
 	end CardTerminal.impl;
-	
+
 	device GsmAntenna
 		features
 			DataInOut: in out data port GsmData;
 			eth: requires bus access ethernet;
+		properties
+			SEI::GrossWeight => 0.100kg;
 	end GsmAntenna;
-	
+
 	device implementation GsmAntenna.impl
 	end GsmAntenna.impl;
-	
+
 	thread TouchController
 		features
 			UIEvents: in data port TouchData;
 	end TouchController;
-	
+
 	thread implementation TouchController.impl
 	end TouchController.impl;
-	
+
 	thread UserInterface
 		features
 			Display: out data port;
 	end UserInterface;
-	
+
 	thread implementation UserInterface.impl
 	end UserInterface.impl;
-	
+
 	thread PrinterController
 		features
 			Printer: out data port PrinterData;
 			PrinterStatus: in data port Base_Types::Boolean;
 	end PrinterController;
-	
+
 	thread implementation PrinterController.impl
 	end PrinterController.impl;
-	
+
 	thread PaymentController
 		features
 			CoinSlotActivate: out data port Base_Types::Boolean;
@@ -136,23 +161,25 @@ public
 			CardPaymentInfo: out data port Base_Types::String;
 			CardPaymentSuccess: in data port Base_Types::Boolean;
 	end PaymentController;
-	
+
 	thread implementation PaymentController.impl
 	end PaymentController.impl;
-	
+
 	thread TicketSeller
 		features
 			Gsm: in out data port GsmData;
 	end TicketSeller;
-	
+
 	thread implementation TicketSeller.impl
 	end TicketSeller.impl;
 
 	memory RAM
 		features
 			BA1: requires bus access Marine.Standard;
+		properties
+			SEI::GrossWeight => 0.1kg;
 	end RAM;
-	
+
 	memory implementation RAM.impl
 	end RAM.impl;
 
@@ -160,13 +187,17 @@ public
 		features
 			eth: requires bus access ethernet;
 			BA1: requires bus access Marine.Standard;
+		properties
+			SEI::GrossWeight => 0.05kg;
+			Scheduling_Protocol => (Round_Robin_Protocol);
+			Clock_Period => 1ms;
+			Timing_Properties::Processor_Capacity => 1.0 MIPS;
+			SEI::MIPSCapacity => 1.2mips;
 	end corei5;
-	
+
 	processor implementation corei5.impl
 	end corei5.impl;
-	
 
-	
 	process MainProc
 		features
 			touch: in data port TouchData;
@@ -180,8 +211,10 @@ public
 			cardActivate: out data port Base_Types::Boolean;
 			card: out data port Base_Types::String;
 			cardSuccess: in data port Base_Types::Boolean;
+		properties
+			SEI::MIPSBudget => 1.0mips;
 	end MainProc;
-	
+
 	process implementation MainProc.impl
 		subcomponents
 			this_MainThr: thread TicketSeller.impl;
@@ -202,10 +235,12 @@ public
 			cardConn: port this_PayThr.CardPaymentInfo -> card;
 			cardSuccessConn: port cardSuccess -> this_PayThr.CardPaymentSuccess;
 	end MainProc.impl;
-	
+
 	system TicketMachine
+		properties
+			SEI::GrossWeight => 4.370kg;
 	end TicketMachine;
-	
+
 	system implementation TicketMachine.impl
 		subcomponents
 			Main_cpu: processor corei5;
@@ -241,27 +276,29 @@ public
 			cardSucessConn: port thisCardTerminal.PaymentSuccess -> thisMainProc.cardSuccess;
 			gsmConn: port thisMainProc.gsm <-> thisGsmAntenna.DataInOut;
 		properties
-			Actual_Processor_Binding => (reference(Main_cpu)) applies to thisMainProc;
-			Actual_Memory_Binding => (reference(thisRAM)) applies to thisMainProc;
-			Actual_Connection_Binding => (reference(thisMarine)) applies to BAC1;
-			Actual_Connection_Binding => (reference(thisMarine)) applies to BAC2;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth0;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth1;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth2;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth3;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth4;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth5;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth6;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to printerConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to printerStatusConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to touchPanelConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to lcdConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to coinActivateConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to coinConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to retChangeConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to cardActivateConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to cardSucessConn;
-			Actual_Connection_Binding => (reference(thisEthernet)) applies to gsmConn;
-			
+			SEI::WeightLimit => 5.0kg;
+			SEI::MIPSCapacity => 1.2mips;
+			Actual_Processor_Binding => (reference (Main_cpu)) applies to thisMainProc;
+			Actual_Memory_Binding => (reference (thisRAM)) applies to thisMainProc;
+			Actual_Connection_Binding => (reference (thisMarine)) applies to BAC1;
+			Actual_Connection_Binding => (reference (thisMarine)) applies to BAC2;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth0;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth1;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth2;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth3;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth4;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth5;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to eth6;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to printerConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to printerStatusConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to touchPanelConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to lcdConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to coinActivateConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to coinConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to retChangeConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to cardActivateConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to cardSucessConn;
+			Actual_Connection_Binding => (reference (thisEthernet)) applies to gsmConn;
+
 	end TicketMachine.impl;
 end TicketMachine;

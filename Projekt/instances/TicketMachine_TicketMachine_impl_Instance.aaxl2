@@ -1,16 +1,166 @@
 <?xml version="1.0" encoding="ASCII"?>
 <instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="TicketMachine_impl_Instance" category="system">
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.WeightLimit"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:RealLiteral" value="5.0">
+        <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSCapacity"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:RealLiteral" value="1.2">
+        <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.4/@ownedLiteral.1"/>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:RealLiteral" value="4.37">
+        <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.40/@ownedPropertyAssociation.0"/>
+  </ownedPropertyAssociation>
   <componentInstance name="thisEthernet" category="bus">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.6">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Transmission_Time"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RecordValue">
+          <ownedFieldValue>
+            <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#/0/@ownedProperty.14/@ownedPropertyType/@ownedField.0"/>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:IntegerLiteral" value="1">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" value="2">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+          <ownedFieldValue>
+            <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#/0/@ownedProperty.14/@ownedPropertyType/@ownedField.1"/>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:IntegerLiteral" value="5">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" value="6">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="1">
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.BandWidthCapacity"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="2.0">
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.17/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.8/@ownedPropertyAssociation.3"/>
+    </ownedPropertyAssociation>
     <subcomponent xsi:type="aadl2:BusSubcomponent" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedBusSubcomponent.0"/>
     <index>0</index>
     <classifier xsi:type="aadl2:BusImplementation" href="../TicketMachine.aadl#TicketMachine.ethernet.impl"/>
   </componentInstance>
   <componentInstance name="thisMarine" category="bus">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.1">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Transmission_Time"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RecordValue">
+          <ownedFieldValue>
+            <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#/0/@ownedProperty.14/@ownedPropertyType/@ownedField.0"/>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:IntegerLiteral" value="1">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" value="2">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+          <ownedFieldValue>
+            <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#/0/@ownedProperty.14/@ownedPropertyType/@ownedField.1"/>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:IntegerLiteral" value="1">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" value="3">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.1"/>
+              </maximum>
+            </ownedValue>
+          </ownedFieldValue>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="1">
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.2"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.BandWidthCapacity"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="100.0">
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.17/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.10/@ownedPropertyAssociation.3"/>
+    </ownedPropertyAssociation>
     <subcomponent xsi:type="aadl2:BusSubcomponent" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedBusSubcomponent.1"/>
     <index>0</index>
     <classifier xsi:type="aadl2:BusImplementation" href="../TicketMachine.aadl#TicketMachine.Marine.Standard"/>
   </componentInstance>
   <componentInstance name="thisPrinter" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.7">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="PrintData">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -43,6 +193,15 @@
     <classifier xsi:type="aadl2:DeviceImplementation" href="../TicketMachine.aadl#TicketMachine.Printer.impl"/>
   </componentInstance>
   <componentInstance name="thisTouchPanel" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.5">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="UIEvents" direction="out">
       <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedDataPort.0"/>
     </featureInstance>
@@ -54,6 +213,15 @@
     <classifier xsi:type="aadl2:DeviceImplementation" href="../TicketMachine.aadl#TicketMachine.TouchPanel.impl"/>
   </componentInstance>
   <componentInstance name="thisLcd" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.77">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="DispImg">
       <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedDataPort.0"/>
     </featureInstance>
@@ -65,6 +233,15 @@
     <classifier xsi:type="aadl2:DeviceImplementation" href="../TicketMachine.aadl#TicketMachine.Lcd.impl"/>
   </componentInstance>
   <componentInstance name="thisCoinSlot" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="1.1">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="Enable">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -109,6 +286,15 @@
     <classifier xsi:type="aadl2:DeviceImplementation" href="../TicketMachine.aadl#TicketMachine.CoinSlot.impl"/>
   </componentInstance>
   <componentInstance name="thisCardTerminal" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.35">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="Enable">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -153,6 +339,15 @@
     <classifier xsi:type="aadl2:DeviceImplementation" href="../TicketMachine.aadl#TicketMachine.CardTerminal.impl"/>
   </componentInstance>
   <componentInstance name="thisGsmAntenna" category="device">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.1">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.22/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="DataInOut" direction="in out">
       <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.22/@ownedDataPort.0"/>
     </featureInstance>
@@ -164,6 +359,15 @@
     <classifier xsi:type="aadl2:DeviceImplementation" href="../TicketMachine.aadl#TicketMachine.GsmAntenna.impl"/>
   </componentInstance>
   <componentInstance name="thisRAM" category="memory">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.1">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.34/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
     <featureInstance name="BA1" category="busAccess">
       <feature xsi:type="aadl2:BusAccess" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.34/@ownedBusAccess.0"/>
     </featureInstance>
@@ -179,7 +383,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.10"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
     </ownedPropertyAssociation>
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Memory_Binding"/>
@@ -188,7 +392,16 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSBudget"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="1.0">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.4/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.38/@ownedPropertyAssociation.0"/>
     </ownedPropertyAssociation>
     <featureInstance name="touch">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -198,7 +411,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.38/@ownedDataPort.0"/>
     </featureInstance>
@@ -210,7 +423,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.38/@ownedDataPort.1"/>
     </featureInstance>
@@ -222,7 +435,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -243,7 +456,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -264,7 +477,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.38/@ownedDataPort.4"/>
     </featureInstance>
@@ -276,7 +489,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -297,7 +510,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -318,7 +531,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -339,7 +552,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -360,7 +573,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -381,7 +594,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -402,7 +615,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.10"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Memory_Binding"/>
@@ -411,7 +624,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="Gsm" direction="in out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -421,7 +634,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.32/@ownedDataPort.0"/>
       </featureInstance>
@@ -437,7 +650,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.10"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Memory_Binding"/>
@@ -446,7 +659,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="UIEvents">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -456,7 +669,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.24/@ownedDataPort.0"/>
       </featureInstance>
@@ -472,7 +685,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.10"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Memory_Binding"/>
@@ -481,7 +694,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="Display" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -491,7 +704,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <feature xsi:type="aadl2:DataPort" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.26/@ownedDataPort.0"/>
       </featureInstance>
@@ -507,7 +720,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.10"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Memory_Binding"/>
@@ -516,7 +729,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="Printer" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -526,7 +739,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -547,7 +760,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -572,7 +785,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.10"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.0"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Memory_Binding"/>
@@ -581,7 +794,7 @@
             <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
           </ownedValue>
         </ownedValue>
-        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+        <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
       </ownedPropertyAssociation>
       <featureInstance name="CoinSlotActivate" direction="out">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
@@ -591,7 +804,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -612,7 +825,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -633,7 +846,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -654,7 +867,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -675,7 +888,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -696,7 +909,7 @@
               <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.8"/>
             </ownedValue>
           </ownedValue>
-          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.1"/>
+          <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
         </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
@@ -718,6 +931,53 @@
     <classifier xsi:type="aadl2:ProcessImplementation" href="../TicketMachine.aadl#TicketMachine.MainProc.impl"/>
   </componentInstance>
   <componentInstance name="Main_cpu" category="processor">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSCapacity"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="1.2">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.4/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.36/@ownedPropertyAssociation.4"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.GrossWeight"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="0.05">
+          <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.0/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.36/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Scheduling_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:NamedValue">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.7/@ownedLiteral.1"/>
+          </ownedListElement>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.36/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Clock_Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="1">
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.36/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Processor_Capacity"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RealLiteral" value="1.0">
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.20/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.36/@ownedPropertyAssociation.3"/>
+    </ownedPropertyAssociation>
     <featureInstance name="eth" category="busAccess">
       <feature xsi:type="aadl2:BusAccess" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.36/@ownedBusAccess.0"/>
     </featureInstance>
@@ -736,7 +996,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.4"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.6"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.10/@featureInstance.0">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.2"/>
@@ -750,7 +1010,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.5"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.7"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.2/@featureInstance.2">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.3"/>
@@ -764,7 +1024,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.6"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.8"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.3/@featureInstance.1">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.4"/>
@@ -778,7 +1038,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.7"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.9"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.4/@featureInstance.1">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.5"/>
@@ -792,7 +1052,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.8"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.10"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.5/@featureInstance.3">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.6"/>
@@ -806,7 +1066,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.9"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.11"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.6/@featureInstance.3">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.7"/>
@@ -820,7 +1080,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.10"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.12"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.0" destination="//@componentInstance.7/@featureInstance.1">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.8"/>
@@ -834,7 +1094,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.4"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.1" destination="//@componentInstance.8/@featureInstance.0">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.0"/>
@@ -848,7 +1108,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.5"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.1" destination="//@componentInstance.10/@featureInstance.1">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.1"/>
@@ -862,7 +1122,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.12"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.14"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.2/@featureInstance.1" destination="//@componentInstance.9/@featureInstance.3">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPortConnection.1"/>
@@ -879,7 +1139,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.5"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.7"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.2/@featureInstance.2" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.3"/>
@@ -893,7 +1153,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.13"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.15"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.3/@featureInstance.0" destination="//@componentInstance.9/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPortConnection.2"/>
@@ -910,7 +1170,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.6"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.8"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.3/@featureInstance.1" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.4"/>
@@ -924,7 +1184,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.7"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.9"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.4/@featureInstance.1" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.5"/>
@@ -938,7 +1198,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.16"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.18"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.9/@featureInstance.6">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPortConnection.5"/>
@@ -955,7 +1215,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.8"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.10"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.5/@featureInstance.3" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.6"/>
@@ -969,7 +1229,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.19"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.21"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.6/@featureInstance.2" destination="//@componentInstance.9/@featureInstance.10">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPortConnection.9"/>
@@ -986,7 +1246,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.9"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.11"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.6/@featureInstance.3" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.7"/>
@@ -1000,7 +1260,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.20"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.22"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.7/@featureInstance.0" destination="//@componentInstance.9/@featureInstance.4" reverse="true">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPortConnection.10"/>
@@ -1017,7 +1277,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.10"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.12"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.7/@featureInstance.1" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.8"/>
@@ -1031,7 +1291,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.2"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.4"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.8/@featureInstance.0" destination="//@componentInstance.1" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.0"/>
@@ -1045,7 +1305,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.20"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.22"/>
     </ownedPropertyAssociation>
     <connectionReference context="//@componentInstance.9" source="//@componentInstance.9/@componentInstance.0/@featureInstance.0" destination="//@componentInstance.9/@featureInstance.4">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.39/@ownedPortConnection.4"/>
@@ -1062,7 +1322,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.14"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.16"/>
     </ownedPropertyAssociation>
     <connectionReference context="//@componentInstance.9" source="//@componentInstance.9/@componentInstance.2/@featureInstance.0" destination="//@componentInstance.9/@featureInstance.1">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.39/@ownedPortConnection.1"/>
@@ -1079,7 +1339,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.11"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.13"/>
     </ownedPropertyAssociation>
     <connectionReference context="//@componentInstance.9" source="//@componentInstance.9/@componentInstance.3/@featureInstance.0" destination="//@componentInstance.9/@featureInstance.2">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.39/@ownedPortConnection.2"/>
@@ -1096,7 +1356,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.15"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.17"/>
     </ownedPropertyAssociation>
     <connectionReference context="//@componentInstance.9" source="//@componentInstance.9/@componentInstance.4/@featureInstance.0" destination="//@componentInstance.9/@featureInstance.5">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.39/@ownedPortConnection.5"/>
@@ -1113,7 +1373,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.17"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.19"/>
     </ownedPropertyAssociation>
     <connectionReference context="//@componentInstance.9" source="//@componentInstance.9/@componentInstance.4/@featureInstance.2" destination="//@componentInstance.9/@featureInstance.7">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.39/@ownedPortConnection.7"/>
@@ -1130,7 +1390,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.18"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.20"/>
     </ownedPropertyAssociation>
     <connectionReference context="//@componentInstance.9" source="//@componentInstance.9/@componentInstance.4/@featureInstance.3" destination="//@componentInstance.9/@featureInstance.8">
       <connection xsi:type="aadl2:PortConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.39/@ownedPortConnection.8"/>
@@ -1155,7 +1415,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.0"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.4"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.6"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.10/@featureInstance.0" destination="//@componentInstance.0" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.2"/>
@@ -1169,7 +1429,7 @@
           <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="//@componentInstance.1"/>
         </ownedValue>
       </ownedValue>
-      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.3"/>
+      <propertyAssociation href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedPropertyAssociation.5"/>
     </ownedPropertyAssociation>
     <connectionReference context="/" source="//@componentInstance.10/@featureInstance.1" destination="//@componentInstance.1" reverse="true">
       <connection xsi:type="aadl2:AccessConnection" href="../TicketMachine.aadl#/0/@ownedPublicSection/@ownedClassifier.41/@ownedAccessConnection.1"/>
