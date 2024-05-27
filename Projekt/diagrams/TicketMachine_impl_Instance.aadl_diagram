@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="ASCII"?>
 <diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
-  <element uuid="73decc38-0938-4fc0-bad1-0a8f0c79be13" manual="true">
-    <element uuid="d4524d0e-181a-4a8b-a805-5855a843743a" manual="true">
-      <element uuid="1e478b31-8807-43b6-b26a-4c79f053bb94" manual="true" dockArea="left">
+  <element uuid="e2c92dde-fe91-487a-a45e-dc63e486a34b" manual="true">
+    <element uuid="9499dce8-e451-434a-8bf0-c5bb2bdf0a3a" manual="true">
+      <element uuid="465117f3-4c10-49ba-8128-1f816fc1ae2c" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ba1</seg>
+        </bo>
+        <position x="160.0" y="60.0"/>
+      </element>
+      <element uuid="a571c034-1afe-4aef-9747-14c50075edfb" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="10.0"/>
+        <position x="168.0" y="10.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>main_cpu</seg>
       </bo>
-      <position x="162.0" y="38.0"/>
-      <size width="189.0" height="60.0"/>
+      <position x="574.0" y="439.0"/>
+      <size width="205.0" height="110.0"/>
     </element>
-    <element uuid="2034c58d-cd73-47f5-a93a-567d24be81ef" manual="true">
-      <element uuid="e145258b-5d20-4fdc-95c7-51b76eba29e8" manual="true" dockArea="left">
+    <element uuid="411d32d8-2ec9-4cd6-8aa2-422c833b8270" manual="true">
+      <element uuid="9d13f1b6-d1c9-4100-b77b-fbb1bdb5df5d" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>enable</seg>
         </bo>
-        <position y="110.0"/>
+        <position y="160.0"/>
       </element>
-      <element uuid="6f3e6a98-cd5b-47ed-a199-47d85ea036d9" manual="true" dockArea="left">
+      <element uuid="9aa6d466-b392-4c5f-90ec-564e2cc713f6" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="160.0"/>
+        <position y="10.0"/>
       </element>
-      <element uuid="13476832-3877-441b-b25d-9c725cc3f065" manual="true" dockArea="left">
+      <element uuid="5fe0fcd9-839e-4d5a-9409-f1ed5c8ce9dd" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>paymentinfo</seg>
         </bo>
-        <position y="60.0"/>
+        <position y="110.0"/>
       </element>
-      <element uuid="77850a3f-2f76-44a0-ae1e-1ce7ca6d78f0" manual="true" dockArea="left">
+      <element uuid="a42abba1-616f-4ec9-8baf-666364950734" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>paymentsuccess</seg>
         </bo>
-        <position y="10.0"/>
+        <position y="60.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thiscardterminal</seg>
       </bo>
-      <position x="1116.0" y="168.0"/>
+      <position x="969.0" y="597.0"/>
       <size width="411.0" height="210.0"/>
     </element>
-    <element uuid="966dd868-3dc2-4ecb-b057-23eaf4e336b5" manual="true">
-      <element uuid="202970b0-cc0e-4cc2-aabd-a55e5eaafcdd" manual="true" dockArea="left">
+    <element uuid="6577afed-1d86-418b-9e11-a30ce888fadc" manual="true">
+      <element uuid="d66f52e4-a4cf-411d-9041-98f70e06d660" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -68,7 +76,7 @@
         </bo>
         <position y="10.0"/>
       </element>
-      <element uuid="3c43e63d-a231-4fcd-ba0a-e93fc8bbb40d" manual="true" dockArea="left">
+      <element uuid="e6faeed8-5bec-4039-870b-c27ff798f4ed" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -76,15 +84,15 @@
         </bo>
         <position y="110.0"/>
       </element>
-      <element uuid="4c70c7f6-a131-41b7-8728-201e2c0bb7c5" manual="true" dockArea="left">
+      <element uuid="ef574037-14e8-43a6-8027-b938c111b5e9" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="160.0"/>
+        <position x="312.0" y="60.0"/>
       </element>
-      <element uuid="964d807d-c7fc-49d3-a544-9821c1c284bf" manual="true" dockArea="left">
+      <element uuid="fd828d0c-ba09-4c55-bd94-e7b00323e68c" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -97,20 +105,20 @@
         <seg>component_instance</seg>
         <seg>thiscoinslot</seg>
       </bo>
-      <position x="1116.0" y="708.0"/>
-      <size width="349.0" height="210.0"/>
+      <position x="430.0" y="259.0"/>
+      <size width="349.0" height="160.0"/>
     </element>
-    <element uuid="82cd6ca6-0272-49d1-8baf-540645be5adf" manual="true">
+    <element uuid="524cbe08-5ff0-4ad2-b60f-623ed07c687c" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thisethernet</seg>
       </bo>
-      <position x="12.0" y="38.0"/>
-      <size width="130.0" height="35.0"/>
+      <position x="809.0" y="291.0"/>
+      <size width="130.0" height="90.0"/>
     </element>
-    <element uuid="d6805974-7ad0-4aeb-9846-d993a23ccfab" manual="true">
-      <element uuid="28c9318a-d08d-4a51-b87c-b3f7fe942fe8" manual="true" dockArea="left">
+    <element uuid="6b7cbebc-10f4-451b-8a5a-8285d0bb758d" manual="true">
+      <element uuid="3dbcf7a7-4757-44e6-a54c-0ebfa83e2527" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
@@ -118,314 +126,567 @@
         </bo>
         <position y="10.0"/>
       </element>
-      <element uuid="47e3e21f-fcad-45ce-8772-8c9f71df4c60" manual="true" dockArea="left">
+      <element uuid="7c1782e0-06c0-43b8-834e-d28d93fb4777" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="60.0"/>
+        <position x="282.0" y="10.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thisgsmantenna</seg>
       </bo>
-      <position x="1116.0" y="398.0"/>
-      <size width="319.0" height="110.0"/>
+      <position x="445.0" y="49.0"/>
+      <size width="319.0" height="60.0"/>
     </element>
-    <element uuid="45fee506-f58f-4176-8db1-af6c71504aa8" manual="true">
-      <element uuid="fcc84ee6-202f-42e0-8827-0fc169406fca" manual="true" dockArea="left">
+    <element uuid="f203a66c-8064-4d27-be7e-056e33c8941a" manual="true">
+      <element uuid="01fde32d-3e60-4f8c-8db0-776bb2076c95" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>dispimg</seg>
         </bo>
-        <position y="10.0"/>
+        <position y="60.0"/>
       </element>
-      <element uuid="5d76bb3e-e705-4b2f-9bb8-fb5245d35506" manual="true" dockArea="left">
+      <element uuid="dbfd6fe1-06df-41e6-9b76-62b92650016b" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="60.0"/>
+        <position y="10.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thislcd</seg>
       </bo>
-      <position x="1116.0" y="38.0"/>
+      <position x="969.0" y="288.0"/>
       <size width="243.0" height="110.0"/>
     </element>
-    <element uuid="734ab2ce-7801-4440-ae88-3aca7465b7e4" manual="true">
-      <element uuid="37171be4-a102-471c-bb06-6990d86b8d4e" manual="true" dockArea="right">
+    <element uuid="85257f70-9f09-46d9-9b6c-a69f07845635" manual="true">
+      <element uuid="63617135-9912-4940-8fd1-8e8b83673bbe" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>card</seg>
         </bo>
-        <position x="291.0" y="110.0"/>
+        <position x="293.0" y="460.0"/>
       </element>
-      <element uuid="b94ce32d-a7c7-4bc1-b39f-d88e237b1dfc" manual="true" dockArea="right">
+      <element uuid="77761e0d-809b-4692-83fa-4c422a455699" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>cardactivate</seg>
         </bo>
-        <position x="241.0" y="160.0"/>
+        <position x="243.0" y="510.0"/>
       </element>
-      <element uuid="90189883-f54a-416e-b519-fbf0a357c960" manual="true" dockArea="right">
+      <element uuid="f580cb2d-8f97-42e5-93aa-198927f42e22" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>cardsuccess</seg>
         </bo>
-        <position x="239.0" y="60.0"/>
+        <position x="241.0" y="410.0"/>
       </element>
-      <element uuid="cb97b29b-79fc-46b1-8d7e-d4183defd09d" manual="true" dockArea="right">
+      <element uuid="a8c2a0fa-d95e-4abd-8974-f2a4eebba44b" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>changecoin</seg>
         </bo>
-        <position x="243.0" y="360.0"/>
+        <position x="245.0" y="260.0"/>
       </element>
-      <element uuid="9a7d4128-cf0e-46fd-9b28-148b5ed54899" manual="true" dockArea="right">
+      <element uuid="49d6cf3f-3610-4551-8926-11be28fe82ab" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>coin</seg>
         </bo>
-        <position x="291.0" y="310.0"/>
+        <position x="293.0" y="210.0"/>
       </element>
-      <element uuid="5fd876a4-e85c-412c-9376-a33d24f4db04" manual="true" dockArea="right">
+      <element uuid="34d7740a-ff15-4866-87a6-2228feb19921" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>coinactivate</seg>
         </bo>
-        <position x="241.0" y="410.0"/>
+        <position x="243.0" y="310.0"/>
       </element>
-      <element uuid="35a92357-cdad-4d71-a8d8-595d3b001430" manual="true" dockArea="right">
+      <element uuid="3dcb1aa3-4a51-4395-8196-7acc9d3691f3" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>display</seg>
         </bo>
-        <position x="273.0" y="10.0"/>
+        <position x="275.0" y="360.0"/>
       </element>
-      <element uuid="2524341e-e164-44c1-a9b7-70cee7fd29d0" manual="true" dockArea="right">
+      <element uuid="9c9f5c76-e474-4e0f-a775-142b7055496b" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>gsm</seg>
         </bo>
-        <position x="291.0" y="210.0"/>
+        <position x="293.0" y="60.0"/>
       </element>
-      <element uuid="feaf6bf9-14ce-4d02-bd55-e6567d776ccf" manual="true" dockArea="right">
+      <element uuid="a62cffcd-d8e7-46c6-aa78-3fa773a0b808" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>printer</seg>
         </bo>
-        <position x="277.0" y="260.0"/>
+        <position x="279.0" y="160.0"/>
       </element>
-      <element uuid="717d3649-53c5-4cca-bf4f-61dfcb7c7edc" manual="true" dockArea="left">
+      <element uuid="5301b6f8-34fb-4813-bd20-3ba2b6d6bb49" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>printerstatus</seg>
+        </bo>
+        <position x="240.0" y="110.0"/>
+      </element>
+      <element uuid="d2672133-454c-4647-8cf6-3f31ecedbfc0" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>touch</seg>
         </bo>
-        <position y="210.0"/>
+        <position x="285.0" y="10.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thismainproc</seg>
       </bo>
-      <position x="690.0" y="38.0"/>
-      <size width="336.0" height="460.0"/>
+      <position x="12.0" y="247.0"/>
+      <size width="338.0" height="560.0"/>
     </element>
-    <element uuid="51c1d430-5101-4d4e-b27c-b0e2529da553" manual="true">
-      <element uuid="338a0404-e45b-4d5f-9060-3857f3ed190e" manual="true" dockArea="left">
+    <element uuid="546c7a6b-228d-4b29-8d5a-781f7e385924" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thismarine</seg>
+      </bo>
+      <position x="809.0" y="571.0"/>
+      <size width="120.0" height="50.0"/>
+    </element>
+    <element uuid="41a6ff95-471a-485a-892f-9933ce1517e0" manual="true">
+      <element uuid="770ef1f9-062c-42e4-8e38-93e5a49a69b6" manual="true" dockArea="right">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="110.0"/>
+        <position x="299.0" y="35.0"/>
       </element>
-      <element uuid="6d439d21-2a48-49ce-879d-869501912d30" manual="true" dockArea="left">
+      <element uuid="89efe861-6b60-49b4-b06d-67798d49c5e4" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>printcomplete</seg>
         </bo>
-        <position y="60.0"/>
+        <position y="10.0"/>
       </element>
-      <element uuid="709f19e3-dddd-4816-9ddd-666831d54eb8" manual="true" dockArea="left">
+      <element uuid="00d962d8-5022-4d22-87b9-15209a12dc0f" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>printdata</seg>
         </bo>
-        <position y="10.0"/>
+        <position y="60.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thisprinter</seg>
       </bo>
-      <position x="1116.0" y="528.0"/>
-      <size width="336.0" height="160.0"/>
+      <position x="434.0" y="129.0"/>
+      <size width="336.0" height="110.0"/>
     </element>
-    <element uuid="63cfc6e6-b9d6-46e3-a005-43aab05afea8" manual="true">
-      <element uuid="56a50e09-1150-4ca6-872e-172ca6e06b2b" manual="true" dockArea="left">
+    <element uuid="9612c515-e47e-4d3d-b9de-82c018404244" manual="true">
+      <element uuid="ebdcc8b5-d1f4-4ef5-a019-4381dbd3ab96" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ba1</seg>
+        </bo>
+        <position x="154.0" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisram</seg>
+      </bo>
+      <position x="580.0" y="569.0"/>
+      <size width="199.0" height="60.0"/>
+    </element>
+    <element uuid="7c702645-bad4-4b83-a1b9-33e6ef74c622" manual="true">
+      <element uuid="6a7ce4a7-d265-445c-84af-f6cd7c66699a" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>eth</seg>
         </bo>
-        <position y="10.0"/>
+        <position y="60.0"/>
       </element>
-      <element uuid="f3109d10-5d19-4999-943a-45f86803f40d" manual="true" dockArea="right">
+      <element uuid="2f800a13-908f-4e6c-ba72-72f7d0b10d3d" manual="true" dockArea="left">
         <bo>
           <seg>org.osate.ge.diagrams.instance</seg>
           <seg>feature_instance</seg>
           <seg>uievents</seg>
         </bo>
-        <position x="225.0" y="10.0"/>
+        <position y="10.0"/>
       </element>
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>component_instance</seg>
         <seg>thistouchpanel</seg>
       </bo>
-      <position x="371.0" y="238.0"/>
-      <size width="299.0" height="60.0"/>
+      <position x="969.0" y="158.0"/>
+      <size width="299.0" height="110.0"/>
     </element>
-    <element uuid="a02a5f55-e1fa-4e60-aba8-1d750bc7eaea" manual="true">
+    <element uuid="1b44c323-cfae-48ae-b57d-837ec6b8aefa" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>bac1 : ticketmachine_impl_instance.thismarine -> ticketmachine_impl_instance.thisram.ba1</seg>
+      </bo>
+      <bendpoints>
+        <point x="925.0" y="611.0"/>
+        <point x="909.0" y="611.0"/>
+        <point x="909.0" y="621.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="58a0183e-de11-4d9a-8c26-a0a60492bd56" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>bac1 : ticketmachine_impl_instance.thisram.ba1 -> ticketmachine_impl_instance.thismarine</seg>
+      </bo>
+      <bendpoints>
+        <point x="929.0" y="621.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="66d3fd8d-91d5-49e0-9fe1-72c642cd620d" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>bac2 : ticketmachine_impl_instance.main_cpu.ba1 -> ticketmachine_impl_instance.thismarine</seg>
+      </bo>
+      <bendpoints>
+        <point x="909.0" y="541.0"/>
+        <point x="909.0" y="591.0"/>
+        <point x="925.0" y="591.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="f681d95f-405c-4061-a913-665f45707b48" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>bac2 : ticketmachine_impl_instance.thismarine -> ticketmachine_impl_instance.main_cpu.ba1</seg>
+      </bo>
+      <bendpoints>
+        <point x="925.0" y="601.0"/>
+        <point x="909.0" y="601.0"/>
+        <point x="909.0" y="541.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="21b17371-829e-48a8-a962-56b93a8915f5" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>cardactivateconn : ticketmachine_impl_instance.thismainproc.cardactivate -> ticketmachine_impl_instance.thiscardterminal.enable</seg>
       </bo>
-      <bendpoints>
-        <point x="1098.0" y="242.0"/>
-        <point x="1098.0" y="322.0"/>
-      </bendpoints>
     </element>
-    <element uuid="6c6d4318-206a-4395-87a7-a8187fb3f7a8" manual="true">
+    <element uuid="f2bdf071-d33b-4bb9-8907-c433faddc29a" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>cardconn : ticketmachine_impl_instance.thismainproc.card -> ticketmachine_impl_instance.thiscardterminal.paymentinfo</seg>
       </bo>
-      <bendpoints>
-        <point x="1108.0" y="192.0"/>
-        <point x="1108.0" y="272.0"/>
-      </bendpoints>
     </element>
-    <element uuid="72fc1c64-8e41-4e0d-9a26-15baf1e81719" manual="true">
+    <element uuid="3cdc9843-7a86-46c0-a37d-816a389151d2" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>cardsucessconn : ticketmachine_impl_instance.thiscardterminal.paymentsuccess -> ticketmachine_impl_instance.thismainproc.cardsuccess</seg>
       </bo>
-      <bendpoints>
-        <point x="1118.0" y="222.0"/>
-        <point x="1118.0" y="142.0"/>
-      </bendpoints>
     </element>
-    <element uuid="2b8dafd1-ad2b-4f6b-bfe7-0578dc2eb181" manual="true">
+    <element uuid="966d919a-9269-4cb5-bbd1-34b8f9173a2c" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>coinactivateconn : ticketmachine_impl_instance.thismainproc.coinactivate -> ticketmachine_impl_instance.thiscoinslot.enable</seg>
       </bo>
       <bendpoints>
-        <point x="1048.0" y="492.0"/>
-        <point x="1048.0" y="862.0"/>
+        <point x="540.0" y="599.0"/>
+        <point x="540.0" y="411.0"/>
       </bendpoints>
     </element>
-    <element uuid="5df842fc-7489-4b71-8f13-fab792c6e1c5" manual="true">
+    <element uuid="df9216ea-9f2d-4b8d-ae4a-a54c0219a26e" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>coinconn : ticketmachine_impl_instance.thiscoinslot.coinamount -> ticketmachine_impl_instance.thismainproc.coin</seg>
       </bo>
       <bendpoints>
-        <point x="1068.0" y="762.0"/>
-        <point x="1068.0" y="392.0"/>
+        <point x="520.0" y="311.0"/>
+        <point x="520.0" y="499.0"/>
       </bendpoints>
     </element>
-    <element uuid="adef93ad-43f4-4f16-9f7c-a9f5721daf47" manual="true">
+    <element uuid="18d2f71b-ee44-4486-b256-f3f5eb4679fc" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth0 : ticketmachine_impl_instance.main_cpu.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="909.0" y="491.0"/>
+        <point x="909.0" y="371.0"/>
+        <point x="925.0" y="371.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="a978e1d8-cd77-46d1-858d-f8a6a4521ac2" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth0 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.main_cpu.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="925.0" y="381.0"/>
+        <point x="909.0" y="381.0"/>
+        <point x="909.0" y="491.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="6c82732c-aae5-43a3-9b40-4ece4f6e3489" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth1 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.thisprinter.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="925.0" y="331.0"/>
+        <point x="909.0" y="331.0"/>
+        <point x="909.0" y="206.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="6fd24654-8565-40e3-8283-c1a4e177d578" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth1 : ticketmachine_impl_instance.thisprinter.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="909.0" y="206.0"/>
+        <point x="909.0" y="341.0"/>
+        <point x="925.0" y="341.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="00b50257-da97-4f16-9b8a-722644f73914" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth2 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.thistouchpanel.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="1063.0" y="326.7142857142857"/>
+        <point x="1069.0" y="326.7142857142857"/>
+        <point x="1069.0" y="259.57142857142856"/>
+      </bendpoints>
+    </element>
+    <element uuid="8ba20b28-3570-4699-b5f8-78f2941c96a7" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth2 : ticketmachine_impl_instance.thistouchpanel.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="1069.0" y="259.57142857142856"/>
+        <point x="1069.0" y="313.8571428571429"/>
+        <point x="1063.0" y="313.85714285714283"/>
+      </bendpoints>
+    </element>
+    <element uuid="fdc8e365-7a37-4973-a1d8-6879e4193a08" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth3 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.thislcd.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="1059.0" y="339.57142857142856"/>
+      </bendpoints>
+    </element>
+    <element uuid="5d6ce212-d3f6-4c52-b507-292aa457efec" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth3 : ticketmachine_impl_instance.thislcd.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="1069.0" y="339.57142857142856"/>
+        <point x="1069.0" y="352.42857142857144"/>
+        <point x="1063.0" y="352.42857142857144"/>
+      </bendpoints>
+    </element>
+    <element uuid="803f0610-2c39-4b0b-b2ee-c45e3ea34225" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth4 : ticketmachine_impl_instance.thiscoinslot.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="929.0" y="361.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="e7df5398-46c9-401a-b239-e867e7a6982a" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth4 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.thiscoinslot.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="925.0" y="351.0"/>
+        <point x="909.0" y="351.0"/>
+        <point x="909.0" y="361.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="d70e3196-2428-4289-8e7e-fdfc279a0a6c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth5 : ticketmachine_impl_instance.thiscardterminal.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="1079.0" y="649.0"/>
+        <point x="1079.0" y="365.2857142857143"/>
+        <point x="1063.0" y="365.2857142857143"/>
+      </bendpoints>
+    </element>
+    <element uuid="c841b4a4-675b-47d4-8cda-3466fd76ea8b" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth5 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.thiscardterminal.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="1063.0" y="378.14285714285717"/>
+        <point x="1079.0" y="378.14285714285717"/>
+        <point x="1079.0" y="649.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="e22a86e9-6185-4f47-8958-e364e0e5877a" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth6 : ticketmachine_impl_instance.thisethernet -> ticketmachine_impl_instance.thisgsmantenna.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="925.0" y="311.0"/>
+        <point x="919.0" y="311.0"/>
+        <point x="919.0" y="101.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="a4c2b484-56fc-4b8e-81fd-a48250468c2d" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth6 : ticketmachine_impl_instance.thisgsmantenna.eth -> ticketmachine_impl_instance.thisethernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.0" y="101.0"/>
+        <point x="919.0" y="321.0"/>
+        <point x="925.0" y="321.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="b72e1471-4908-45bb-972f-051a3a599487" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>gsmconn : ticketmachine_impl_instance.thisgsmantenna.datainout -> ticketmachine_impl_instance.thismainproc.gsm</seg>
       </bo>
       <bendpoints>
-        <point x="1088.0" y="452.0"/>
-        <point x="1088.0" y="292.0"/>
+        <point x="490.0" y="101.0"/>
+        <point x="490.0" y="349.0"/>
       </bendpoints>
     </element>
-    <element uuid="34f3644a-37a1-4a28-a665-478f498bc414" manual="true">
+    <element uuid="8f616aeb-74bb-44b2-8a22-52e2bcf2fe0a" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>gsmconn : ticketmachine_impl_instance.thismainproc.gsm -> ticketmachine_impl_instance.thisgsmantenna.datainout</seg>
       </bo>
       <bendpoints>
-        <point x="1088.0" y="292.0"/>
-        <point x="1088.0" y="452.0"/>
+        <point x="490.0" y="349.0"/>
+        <point x="490.0" y="101.0"/>
       </bendpoints>
     </element>
-    <element uuid="71f9743e-a9f1-4e70-b8e8-7388c2bf515b" manual="true">
+    <element uuid="333cddb1-ab55-48a1-91b5-d880eee42cbc" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>lcdconn : ticketmachine_impl_instance.thismainproc.display -> ticketmachine_impl_instance.thislcd.dispimg</seg>
       </bo>
+      <bendpoints>
+        <point x="1069.0" y="649.0"/>
+        <point x="1069.0" y="389.57142857142856"/>
+      </bendpoints>
     </element>
-    <element uuid="93b47a2b-d96e-4c13-a998-0585a4092af1" manual="true">
+    <element uuid="21952f81-12e4-4128-8ae7-62286e0d6237" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>printerconn : ticketmachine_impl_instance.thismainproc.printer -> ticketmachine_impl_instance.thisprinter.printdata</seg>
       </bo>
       <bendpoints>
-        <point x="1078.0" y="342.0"/>
-        <point x="1078.0" y="582.0"/>
+        <point x="510.0" y="449.0"/>
+        <point x="510.0" y="231.0"/>
       </bendpoints>
     </element>
-    <element uuid="d867decd-fafb-4b49-8317-bfc47d601f52" manual="true">
+    <element uuid="7cde59f9-1942-4076-8d4e-5c8ccfefef9d" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>printerstatusconn : ticketmachine_impl_instance.thisprinter.printcomplete -> ticketmachine_impl_instance.thismainproc.printerstatus</seg>
+      </bo>
+      <bendpoints>
+        <point x="500.0" y="181.0"/>
+        <point x="500.0" y="399.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="0e59ec4b-c34b-4f2e-b7f2-95c229a7240e" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>retchangeconn : ticketmachine_impl_instance.thismainproc.changecoin -> ticketmachine_impl_instance.thiscoinslot.returnchange</seg>
       </bo>
       <bendpoints>
-        <point x="1058.0" y="442.0"/>
-        <point x="1058.0" y="812.0"/>
+        <point x="530.0" y="549.0"/>
+        <point x="530.0" y="361.0"/>
       </bendpoints>
     </element>
-    <element uuid="c6898ef9-a113-475a-8eb7-ebcfe122f637" manual="true">
+    <element uuid="f4b0b267-76b1-42cc-bc25-5c7e1da9f87c" manual="true">
       <bo>
         <seg>org.osate.ge.diagrams.instance</seg>
         <seg>connection_reference</seg>
         <seg>touchpanelconn : ticketmachine_impl_instance.thistouchpanel.uievents -> ticketmachine_impl_instance.thismainproc.touch</seg>
       </bo>
+      <bendpoints>
+        <point x="1069.0" y="209.57142857142856"/>
+        <point x="1069.0" y="48.0"/>
+        <point x="480.0" y="48.0"/>
+        <point x="480.0" y="299.0"/>
+      </bendpoints>
     </element>
     <bo>
       <seg>org.osate.ge.diagrams.instance</seg>
       <seg>system_instance</seg>
       <seg>/projekt/instances/ticketmachine_ticketmachine_impl_instance.aaxl2</seg>
     </bo>
-    <position x="12.0" y="12.0"/>
-    <size width="1539.0" height="930.0"/>
+    <position x="120.0" y="10.0"/>
+    <size width="1392.0" height="819.0"/>
   </element>
   <config type="structure" connectionPrimaryLabelsVisible="false">
     <enabledAadlProperties/>

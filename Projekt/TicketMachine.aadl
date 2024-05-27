@@ -37,8 +37,11 @@ public
 	bus implementation ethernet.impl
 	end ethernet.impl;
 	
-	memory GenericRAM
-	end GenericRAM;	
+	bus Marine
+	end Marine;
+	bus implementation Marine.Standard
+	end Marine.Standard;
+	
 	
 	device Printer
 		features
@@ -118,6 +121,7 @@ public
 	thread PrinterController
 		features
 			Printer: out data port PrinterData;
+			PrinterStatus: in data port Base_Types::Boolean;
 	end PrinterController;
 	
 	thread implementation PrinterController.impl
@@ -144,10 +148,18 @@ public
 	thread implementation TicketSeller.impl
 	end TicketSeller.impl;
 
+	memory RAM
+		features
+			BA1: requires bus access Marine.Standard;
+	end RAM;
+	
+	memory implementation RAM.impl
+	end RAM.impl;
 
 	processor corei5
 		features
 			eth: requires bus access ethernet;
+			BA1: requires bus access Marine.Standard;
 	end corei5;
 	
 	processor implementation corei5.impl
@@ -160,6 +172,7 @@ public
 			touch: in data port TouchData;
 			display: out data port;
 			printer: out data port PrinterData;
+			printerStatus: in data port Base_Types::Boolean;
 			gsm: in out data port GsmData;
 			coinActivate: out data port Base_Types::Boolean;
 			coin: in data port CurrencyType;
@@ -180,6 +193,7 @@ public
 			touchConn: port touch -> this_TouchThr.UIEvents;
 			displayConn: port this_UIThr.Display -> display;
 			printerConn: port this_PrintThr.Printer -> printer;
+			printerStatusConn: port printerStatus -> this_PrintThr.PrinterStatus;
 			gsmConn: port this_MainThr.Gsm <-> gsm;
 			coinActivateConn: port this_PayThr.CoinSlotActivate -> coinActivate;
 			coinConn: port coin -> this_PayThr.CoinSlot;
@@ -195,6 +209,7 @@ public
 	system implementation TicketMachine.impl
 		subcomponents
 			Main_cpu: processor corei5;
+			thisRAM: memory RAM.impl;
 			thisMainProc: process MainProc.impl;
 			thisPrinter: device Printer.impl;
 			thisTouchPanel: device TouchPanel.impl;
@@ -203,8 +218,19 @@ public
 			thisCardTerminal: device CardTerminal.impl;
 			thisGsmAntenna: device GsmAntenna.impl;
 			thisEthernet: bus ethernet.impl;
+			thisMarine: bus Marine.Standard;
 		connections
+			BAC1: bus access thisMarine <-> thisRAM.BA1;
+			BAC2: bus access thisMarine <-> Main_cpu.BA1;
+			eth0: bus access thisEthernet <-> Main_cpu.eth;
+			eth1: bus access thisEthernet <-> thisPrinter.eth;
+			eth2: bus access thisEthernet <-> thisTouchPanel.eth;
+			eth3: bus access thisEthernet <-> thisLcd.eth;
+			eth4: bus access thisEthernet <-> thisCoinSlot.eth;
+			eth5: bus access thisEthernet <-> thisCardTerminal.eth;
+			eth6: bus access thisEthernet <-> thisGsmAntenna.eth;
 			printerConn: port thisMainProc.printer -> thisPrinter.PrintData;
+			printerStatusConn: port thisPrinter.PrintComplete -> thisMainProc.printerStatus;
 			touchPanelConn: port thisTouchPanel.UIEvents -> thisMainProc.touch;
 			lcdConn: port thisMainProc.display -> thisLcd.DispImg;
 			coinActivateConn: port thisMainProc.coinActivate -> thisCoinSlot.Enable;
@@ -216,5 +242,26 @@ public
 			gsmConn: port thisMainProc.gsm <-> thisGsmAntenna.DataInOut;
 		properties
 			Actual_Processor_Binding => (reference(Main_cpu)) applies to thisMainProc;
+			Actual_Memory_Binding => (reference(thisRAM)) applies to thisMainProc;
+			Actual_Connection_Binding => (reference(thisMarine)) applies to BAC1;
+			Actual_Connection_Binding => (reference(thisMarine)) applies to BAC2;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth0;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth1;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth2;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth3;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth4;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth5;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to eth6;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to printerConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to printerStatusConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to touchPanelConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to lcdConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to coinActivateConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to coinConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to retChangeConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to cardActivateConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to cardSucessConn;
+			Actual_Connection_Binding => (reference(thisEthernet)) applies to gsmConn;
+			
 	end TicketMachine.impl;
 end TicketMachine;
