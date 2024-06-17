@@ -1,2 +1,14 @@
 Check connection binding consistency Report
 
+Warning! thisPrinter.PrintComplete -> thisMainProc.this_PrintThr.PrinterStatus: Connection source and/or destination is not bound to hardware
+Warning! thisTouchPanel.UIEvents -> thisMainProc.this_TouchThr.UIEvents: Connection source and/or destination is not bound to hardware
+Warning! thisCoinSlot.CoinAmount -> thisMainProc.this_PayThr.CoinSlot: Connection source and/or destination is not bound to hardware
+Warning! thisCardTerminal.PaymentSuccess -> thisMainProc.this_PayThr.CardPaymentSuccess: Connection source and/or destination is not bound to hardware
+Warning! thisGsmAntenna.DataInOut -> thisMainProc.this_MainThr.Gsm: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_MainThr.Gsm -> thisGsmAntenna.DataInOut: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_UIThr.Display -> thisLcd.DispImg: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_PrintThr.Printer -> thisPrinter.PrintData: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_PayThr.CoinSlotActivate -> thisCoinSlot.Enable: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_PayThr.ReturnCoinChange -> thisCoinSlot.ReturnChange: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_PayThr.CardTerminalActivate -> thisCardTerminal.Enable: Connection source and/or destination is not bound to hardware
+Warning! thisMainProc.this_PayThr.CardPaymentInfo -> thisCardTerminal.PaymentInfo: Connection source and/or destination is not bound to hardware

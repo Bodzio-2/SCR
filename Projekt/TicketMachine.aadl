@@ -37,8 +37,8 @@ public
 			SEI::GrossWeight => 0.6kg;
 			Transmission_Time => [Fixed => 1ns..2ns; PerByte => 5ns ..6ns;];
     		Period => 1 ms;
-    		SEI::BandWidthCapacity => 2.0 MBytesps;
-    		--SEI::BandWidthBudget => 200.0 KBytesps;
+    		SEI::BandWidthCapacity => 100.0 MBytesps;
+    		SEI::BandWidthBudget => 97.0 MBytesps;
 	end ethernet;
 
 	bus implementation ethernet.impl
@@ -49,8 +49,8 @@ public
 			SEI::GrossWeight => 0.1kg;
 			Transmission_Time => [Fixed => 1ns..2ns; PerByte => 1ns ..3ns;];
     		Period => 1 us;
-    		SEI::BandWidthCapacity => 100.0 MBytesps;
-    		--SEI::BandWidthBudget => 1.0 MBytesps;
+    		SEI::BandWidthCapacity => 1024.0 MBytesps;
+    		SEI::BandWidthBudget => 500.0 MBytesps;
 	end Marine;
 
 	bus implementation Marine.Standard
@@ -234,6 +234,19 @@ public
 			cardActivateConn: port this_PayThr.CardTerminalActivate -> cardActivate;
 			cardConn: port this_PayThr.CardPaymentInfo -> card;
 			cardSuccessConn: port cardSuccess -> this_PayThr.CardPaymentSuccess;
+		
+		properties
+			SEI::BandWidthBudget => 3.0 MBytesps applies to touchConn;
+			SEI::BandWidthBudget => 10.0 MBytesps applies to displayConn;
+			SEI::BandWidthBudget => 3.0 MBytesps applies to printerConn;
+			SEI::BandWidthBudget => 0.1 MBytesps applies to printerStatusConn;
+			SEI::BandWidthBudget => 5.0 MBytesps applies to gsmConn;
+			SEI::BandWidthBudget => 0.1 MBytesps applies to coinActivateConn;
+			SEI::BandWidthBudget => 0.5 MBytesps applies to coinConn;
+			SEI::BandWidthBudget => 0.5 MBytesps applies to changeCoinConn;
+			SEI::BandWidthBudget => 1.0 MBytesps applies to cardActivateConn;
+			SEI::BandWidthBudget => 5.0 MBytesps applies to cardConn;
+			SEI::BandWidthBudget => 0.2 MBytesps applies to cardSuccessConn;
 	end MainProc.impl;
 
 	system TicketMachine
@@ -299,6 +312,18 @@ public
 			Actual_Connection_Binding => (reference (thisEthernet)) applies to cardActivateConn;
 			Actual_Connection_Binding => (reference (thisEthernet)) applies to cardSucessConn;
 			Actual_Connection_Binding => (reference (thisEthernet)) applies to gsmConn;
+			
+			SEI::BandWidthBudget => 50.0 MBytesps applies to BAC1;
+			SEI::BandWidthBudget => 50.0 MBytesps applies to BAC2;
+			SEI::BandWidthBudget => 15.0 MBytesps applies to eth0;
+			SEI::BandWidthBudget => 1.5 MBytesps applies to eth1;
+			SEI::BandWidthBudget => 0.5 MBytesps applies to eth2;
+			SEI::BandWidthBudget => 10.0 MBytesps applies to eth3;
+			SEI::BandWidthBudget => 0.5 MBytesps applies to eth4;
+			SEI::BandWidthBudget => 1.5 MBytesps applies to eth5;
+			SEI::BandWidthBudget => 2.5 MBytesps applies to eth6;
 
 	end TicketMachine.impl;
+	
+	
 end TicketMachine;

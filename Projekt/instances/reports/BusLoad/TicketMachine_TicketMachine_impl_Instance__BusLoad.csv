@@ -1,48 +1,14 @@
-Bus Load Analysis Report
+Bus load analysis of TicketMachine_impl_Instance
 
 
-Bus Summary Report: 
-* thisEthernet bandwidth capacity 2000.0 KBytesps and bound connections without bandwidth budget
-* thisMarine bandwidth capacity 100000.0 KBytesps and bound connections without bandwidth budget
+"Physical Bus","Capacity (KB/s)","Budget (KB/s)","Required Budget (KB/s)","Actual (KB/s)"
+"thisEthernet","100000.0","97000.0","0.0","0.0"
+"thisMarine","1024000.0","500000.0","0.0","0.0"
+
+"Bus thisEthernet has data overhead of 0 bytes"
+"Bound Virtual Bus/Connection","Capacity (KB/s)","Budget (KB/s)","Required Budget (KB/s)","Actual (KB/s)"
+
+"Bus thisMarine has data overhead of 0 bytes"
+"Bound Virtual Bus/Connection","Capacity (KB/s)","Budget (KB/s)","Required Budget (KB/s)","Actual (KB/s)"
 
 
-Connection Budget Details for bus thisEthernet with capacity 2000.0 KBytesps
-
-Connection,Budget,Actual (Data Size * Sender Rate),Note
-thisEthernet -> Main_cpu.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisEthernet -> thisPrinter.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisEthernet -> thisTouchPanel.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisEthernet -> thisLcd.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisEthernet -> thisCoinSlot.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisEthernet -> thisCardTerminal.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisEthernet -> thisGsmAntenna.eth, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisPrinter.PrintComplete -> thisMainProc.this_PrintThr.PrinterStatus, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisPrinter.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisTouchPanel.UIEvents -> thisMainProc.this_TouchThr.UIEvents, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisTouchPanel.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisLcd.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisCoinSlot.CoinAmount -> thisMainProc.this_PayThr.CoinSlot, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisCoinSlot.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisCardTerminal.PaymentSuccess -> thisMainProc.this_PayThr.CardPaymentSuccess, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisCardTerminal.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisGsmAntenna.DataInOut -> thisMainProc.this_MainThr.Gsm, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisGsmAntenna.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_MainThr.Gsm -> thisGsmAntenna.DataInOut, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_UIThr.Display -> thisLcd.DispImg, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_PrintThr.Printer -> thisPrinter.PrintData, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_PayThr.CoinSlotActivate -> thisCoinSlot.Enable, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_PayThr.ReturnCoinChange -> thisCoinSlot.ReturnChange, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_PayThr.CardTerminalActivate -> thisCardTerminal.Enable, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMainProc.this_PayThr.CardPaymentInfo -> thisCardTerminal.PaymentInfo, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-Main_cpu.eth -> thisEthernet, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-Total, ,0,000 KBytesps,
-
-
-Connection Budget Details for bus thisMarine with capacity 100000.0 KBytesps
-
-Connection,Budget,Actual (Data Size * Sender Rate),Note
-thisMarine -> thisRAM.BA1, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisMarine -> Main_cpu.BA1, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-thisRAM.BA1 -> thisMarine, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-Main_cpu.BA1 -> thisMarine, 0.0 KBytesps,0.0 KBytesps,No bandwidth budget or actual bandwidth from port data size&rate
-Total, ,0,000 KBytesps,

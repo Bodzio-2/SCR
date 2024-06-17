@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="50ff25d6-dc09-4491-8d05-36e34e9d50a3" manual="true">
+    <element uuid="495cbd2b-bb70-4842-844f-9462a397b0f5" manual="true">
+      <element uuid="904090bb-5f61-48fd-a35c-94b2b46e7456" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>BA1</seg>
+        </bo>
+        <position x="147.0143165588379" y="60.0"/>
+      </element>
+      <element uuid="f7795217-7049-4776-97a3-7b28661e7891" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position x="153.68098068237305" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>Main_cpu</seg>
+      </bo>
+      <position x="539.2890663146973" y="439.0"/>
+      <size width="184.21613693237305" height="110.0"/>
+    </element>
+    <element uuid="ebdcf0c2-306f-4205-8df1-af09f51a28f2" manual="true">
+      <element uuid="68667e53-4658-426e-8359-4adac15f8b45" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>Enable</seg>
+        </bo>
+        <position y="160.0"/>
+      </element>
+      <element uuid="06cbaa65-e93b-4fbd-b179-ddcde173649a" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="d3ecca26-9b90-472a-bfa7-08469132d51a" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>PaymentInfo</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="b7765b21-6762-45c3-b3a2-2adfa7619f57" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>PaymentSuccess</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisCardTerminal</seg>
+      </bo>
+      <position x="906.6575317382812" y="597.0"/>
+      <size width="383.52603912353516" height="210.0"/>
+    </element>
+    <element uuid="3478bfc4-767b-4858-9fd9-eeee76a3f7d4" manual="true">
+      <element uuid="ee13857c-ac7a-405a-a596-4f7bbde40448" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>CoinAmount</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="b446099c-587e-4a49-a35d-f7b8e4411667" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>Enable</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <element uuid="6d2bf1e2-cbac-4b59-8921-6bed555217e4" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position x="290.0612030029297" y="60.0"/>
+      </element>
+      <element uuid="3f81123e-a561-42f4-a7c5-c96cad6f3797" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>ReturnChange</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisCoinSlot</seg>
+      </bo>
+      <position x="402.9088439941406" y="259.0"/>
+      <size width="320.5963592529297" height="160.0"/>
+    </element>
+    <element uuid="3ec43c6d-a27f-49db-b80f-fde55edb4c76" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisEthernet</seg>
+      </bo>
+      <position x="753.5051879882812" y="291.0"/>
+      <size width="123.15234375" height="90.0"/>
+    </element>
+    <element uuid="39b7354b-5e88-4cf9-a265-6b3d1f02b563" manual="true">
+      <element uuid="16ffbd8e-3ea1-4fca-94a2-08d988e36f6f" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>DataInOut</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="5affac00-8f59-43c4-a1fe-3cc32c226e60" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position x="265.58203887939453" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisGsmAntenna</seg>
+      </bo>
+      <position x="415.1484260559082" y="49.0"/>
+      <size width="296.11719512939453" height="60.0"/>
+    </element>
+    <element uuid="b78d72d1-d2b6-4dcd-a195-6a8b2c8a408f" manual="true">
+      <element uuid="cc6ad57e-57a7-4984-adfb-0789a4a0a859" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>DispImg</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="655a3a72-5fca-4e5c-a81e-73e2f1df21ed" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisLcd</seg>
+      </bo>
+      <position x="906.6575317382812" y="287.57142857142856"/>
+      <size width="216.04557037353516" height="110.0"/>
+    </element>
+    <element uuid="92887fdd-43aa-4a03-9f24-87878b0a16ba" manual="true">
+      <element uuid="f86f8910-62d0-449d-916c-8ea073472c36" manual="true" dockArea="right">
+        <element uuid="2ae7c99d-8c90-4bc0-b79d-5cb9093cfba9" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>card</seg>
+        </bo>
+        <position x="272.9713363647461" y="460.0"/>
+      </element>
+      <element uuid="4691754c-a0aa-4507-bf99-8e9f374f5938" manual="true" dockArea="right">
+        <element uuid="95d45dfd-7962-4560-8eb2-e93c18ce1acf" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>cardActivate</seg>
+        </bo>
+        <position x="225.54295349121094" y="510.0"/>
+      </element>
+      <element uuid="e0e91981-d9c0-4f06-8f19-2796706ea495" manual="true" dockArea="right">
+        <element uuid="147766de-0e92-4a67-961a-dc06618be97d" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>cardSuccess</seg>
+        </bo>
+        <position x="222.58071899414062" y="410.0"/>
+      </element>
+      <element uuid="fe346410-af87-43bc-9b6a-83fab6ed52c8" manual="true" dockArea="right">
+        <element uuid="5aa745fd-aa04-455e-9526-e78da2cfb094" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>changeCoin</seg>
+        </bo>
+        <position x="227.74347686767578" y="260.0"/>
+      </element>
+      <element uuid="a360b442-8c41-435b-9ac0-3eb59e1f54dd" manual="true" dockArea="right">
+        <element uuid="d7a2031e-cf23-4908-a2b7-667af9e02c8b" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>coin</seg>
+        </bo>
+        <position x="274.4491996765137" y="210.0"/>
+      </element>
+      <element uuid="a6d55d64-1b03-4915-9e74-9b49b918abfe" manual="true" dockArea="right">
+        <element uuid="b59a297f-f862-4568-8b5f-ebcbec6fa01c" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>coinActivate</seg>
+        </bo>
+        <position x="227.02081298828125" y="310.0"/>
+      </element>
+      <element uuid="5d958ab6-56c0-4b01-8e18-f97a050b766d" manual="true" dockArea="right">
+        <element uuid="dceecadf-a108-4e99-9143-6ccd8e191019" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>display</seg>
+        </bo>
+        <position x="257.4049301147461" y="360.0"/>
+      </element>
+      <element uuid="7ce39f44-c816-451a-926a-3c76fe3082ac" manual="true" dockArea="right">
+        <element uuid="5e5c68fa-6b82-47c4-a1a0-71db3b59151f" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>gsm</seg>
+        </bo>
+        <position x="273.7200355529785" y="60.0"/>
+      </element>
+      <element uuid="35b4a7b8-1abc-4a53-981d-cc0785965757" manual="true" dockArea="right">
+        <element uuid="39a11d5d-295e-4c27-9197-067a07f43602" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>printer</seg>
+        </bo>
+        <position x="261.1158676147461" y="160.0"/>
+      </element>
+      <element uuid="d7317bb5-3e7f-4783-b4d2-b845a4438337" manual="true" dockArea="right">
+        <element uuid="c6ee7842-2415-4659-a1a1-ca2b56713f9a" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>printerStatus</seg>
+        </bo>
+        <position x="223.31639862060547" y="110.0"/>
+      </element>
+      <element uuid="ddec9b62-a10b-45df-a161-0a6a8db7d129" manual="true" dockArea="right">
+        <element uuid="d0e008ea-3178-4aa3-a977-65cd8fd17922" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+            <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>touch</seg>
+        </bo>
+        <position x="266.2916488647461" y="10.0"/>
+      </element>
+      <element uuid="e8e60190-b755-4816-b556-554df56b37be" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Memory_Binding</seg>
+          <seg>e98c92b9-73a8-40c9-b0e2-cd35b7831200</seg>
+        </bo>
+      </element>
+      <element uuid="b6aaadbc-05f3-480d-a925-042d0713b327" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+          <seg>495cbd2b-bb70-4842-844f-9462a397b0f5</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisMainProc</seg>
+      </bo>
+      <position x="12.0" y="247.0"/>
+      <size width="310.9088363647461" height="560.0"/>
+    </element>
+    <element uuid="63cc6029-431b-4b79-b3cc-06ee8849ee52" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisMarine</seg>
+      </bo>
+      <position x="753.5051879882812" y="571.0"/>
+      <size width="113.50390243530273" height="50.0"/>
+    </element>
+    <element uuid="fb05f721-d38f-4c2e-89dd-5f01c8d4a968" manual="true">
+      <element uuid="66baf9f5-2f46-43b7-9275-0514dd5f5c5c" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position x="274.4427146911621" y="35.0"/>
+      </element>
+      <element uuid="58bba7fc-bb9c-41c0-ba56-b9d8b442eb29" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>PrintComplete</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="493eb703-64e5-4092-b641-ab7d39394c1d" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>PrintData</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisPrinter</seg>
+      </bo>
+      <position x="408.1150067647298" y="129.0"/>
+      <size width="304.9778709411621" height="110.0"/>
+    </element>
+    <element uuid="e98c92b9-73a8-40c9-b0e2-cd35b7831200" manual="true">
+      <element uuid="933bd986-fcd1-4034-8bc8-cca79be159a5" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>BA1</seg>
+        </bo>
+        <position x="139.5794219970703" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisRAM</seg>
+      </bo>
+      <position x="546.7239608764648" y="569.0"/>
+      <size width="176.78124237060547" height="60.0"/>
+    </element>
+    <element uuid="74fc7ad4-9bd4-42f5-841d-c3ac6369a6dd" manual="true">
+      <element uuid="e5256976-1a1a-49ed-ab56-82768b6e047b" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>eth</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="848c8eab-6c48-4471-8014-d7c77f4b7f13" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>UIEvents</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thisTouchPanel</seg>
+      </bo>
+      <position x="906.6575317382812" y="157.57142857142856"/>
+      <size width="276.09766387939453" height="110.0"/>
+    </element>
+    <element uuid="1b2fdaa8-273d-4caa-b21c-2d738ce9019a" manual="true">
+      <element uuid="e6180ee7-53aa-4a94-af12-3ce822935094" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>63cc6029-431b-4b79-b3cc-06ee8849ee52</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>BAC1 : TicketMachine_impl_Instance.thisMarine -> TicketMachine_impl_Instance.thisRAM.BA1</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.5051879882812" y="611.0"/>
+        <point x="903.5051879882812" y="611.0"/>
+        <point x="903.5051879882812" y="621.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="792864f5-0ba2-47e6-83d7-4ecd24ff3f05" manual="true">
+      <element uuid="64ddca29-2ac1-4ad7-93b5-367e59ff9274" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>63cc6029-431b-4b79-b3cc-06ee8849ee52</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>BAC1 : TicketMachine_impl_Instance.thisRAM.BA1 -> TicketMachine_impl_Instance.thisMarine</seg>
+      </bo>
+      <bendpoints>
+        <point x="923.5051879882812" y="621.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="00fc4688-49d9-4670-9bdc-4ca44577b57e" manual="true">
+      <element uuid="bb9750e2-87ea-432f-8dec-744f37aeeb79" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>63cc6029-431b-4b79-b3cc-06ee8849ee52</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>BAC2 : TicketMachine_impl_Instance.Main_cpu.BA1 -> TicketMachine_impl_Instance.thisMarine</seg>
+      </bo>
+      <bendpoints>
+        <point x="903.5051879882812" y="541.0"/>
+        <point x="903.5051879882812" y="591.0"/>
+        <point x="919.5051879882812" y="591.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="2be704f3-58bd-4589-8aca-e63d949283d2" manual="true">
+      <element uuid="3ef63c3d-4468-4747-9cdc-3d48f0135914" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>63cc6029-431b-4b79-b3cc-06ee8849ee52</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>BAC2 : TicketMachine_impl_Instance.thisMarine -> TicketMachine_impl_Instance.Main_cpu.BA1</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.5051879882812" y="601.0"/>
+        <point x="903.5051879882812" y="601.0"/>
+        <point x="903.5051879882812" y="541.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="e9672cf5-b387-4624-a02b-d5c1c32a64a5" manual="true">
+      <element uuid="044fe713-3c78-4dce-88bc-f694b55fb841" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>cardActivateConn : TicketMachine_impl_Instance.thisMainProc.cardActivate -> TicketMachine_impl_Instance.thisCardTerminal.Enable</seg>
+      </bo>
+    </element>
+    <element uuid="8786aa18-74ab-4c5c-98de-1711648c85d4" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>cardConn : TicketMachine_impl_Instance.thisMainProc.card -> TicketMachine_impl_Instance.thisCardTerminal.PaymentInfo</seg>
+      </bo>
+    </element>
+    <element uuid="e8e57403-8616-49f7-88ed-27af5db71a54" manual="true">
+      <element uuid="b9dce5df-ae13-4a40-8d65-90d4c29f5fa3" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>cardSucessConn : TicketMachine_impl_Instance.thisCardTerminal.PaymentSuccess -> TicketMachine_impl_Instance.thisMainProc.cardSuccess</seg>
+      </bo>
+    </element>
+    <element uuid="ce94ea4d-78d2-49aa-8cd8-80f82ff298fa" manual="true">
+      <element uuid="a6e95768-47e7-4103-b54c-719794207db8" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>coinActivateConn : TicketMachine_impl_Instance.thisMainProc.coinActivate -> TicketMachine_impl_Instance.thisCoinSlot.Enable</seg>
+      </bo>
+      <bendpoints>
+        <point x="562.9088134765625" y="599.0"/>
+        <point x="562.9088134765625" y="411.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="de12e88a-ec31-4736-a3c1-d30bbe3f816b" manual="true">
+      <element uuid="25fadb0b-0919-491b-88d0-2e7896f9137a" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>coinConn : TicketMachine_impl_Instance.thisCoinSlot.CoinAmount -> TicketMachine_impl_Instance.thisMainProc.coin</seg>
+      </bo>
+      <bendpoints>
+        <point x="542.9088134765625" y="311.0"/>
+        <point x="542.9088134765625" y="499.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="87f20a45-3a83-4925-82a2-20b181f2df94" manual="true">
+      <element uuid="219003b7-15ca-41df-9e8e-45616a3af2d4" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth0 : TicketMachine_impl_Instance.Main_cpu.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="903.5051879882812" y="491.0"/>
+        <point x="903.5051879882812" y="371.0"/>
+        <point x="919.5051879882812" y="371.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="2f995caf-8780-4a19-9510-c69677726c88" manual="true">
+      <element uuid="8a2983fe-9c67-4e05-a583-1bb095b3d9b4" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth0 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.Main_cpu.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.5051879882812" y="381.0"/>
+        <point x="903.5051879882812" y="381.0"/>
+        <point x="903.5051879882812" y="491.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="dc129362-80c1-4717-8b41-2cd706caef92" manual="true">
+      <element uuid="1cea22be-8eff-40f2-9d8b-a2c58a83b0ce" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth1 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.thisPrinter.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.5051879882812" y="331.0"/>
+        <point x="903.5051879882812" y="331.0"/>
+        <point x="903.5051879882812" y="206.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="86868437-e911-4aed-b963-395e4f634c38" manual="true">
+      <element uuid="80a3f9ec-6329-4302-af20-8eb40122461a" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth1 : TicketMachine_impl_Instance.thisPrinter.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="903.5051879882812" y="206.0"/>
+        <point x="903.5051879882812" y="341.0"/>
+        <point x="919.5051879882812" y="341.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="de70b0cc-42fe-4870-aee1-281cf907e68d" manual="true">
+      <element uuid="4fcf12a0-aeef-4d29-87ee-6b0cf0b0c66b" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth2 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.thisTouchPanel.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="1050.657470703125" y="326.71429443359375"/>
+        <point x="1056.657470703125" y="326.71429443359375"/>
+        <point x="1056.657470703125" y="259.5714111328125"/>
+      </bendpoints>
+    </element>
+    <element uuid="8b726d9e-8033-433e-b755-2a898eee83b0" manual="true">
+      <element uuid="ed394849-35aa-4987-b7c5-dd93bf817726" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth2 : TicketMachine_impl_Instance.thisTouchPanel.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="1056.657470703125" y="259.5714111328125"/>
+        <point x="1056.657470703125" y="313.8571472167969"/>
+        <point x="1050.657470703125" y="313.8571472167969"/>
+      </bendpoints>
+    </element>
+    <element uuid="12f60119-4046-434b-988f-c2d81af1d93e" manual="true">
+      <element uuid="422284a8-ca95-47ab-8d76-d9e260286214" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth3 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.thisLcd.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="1046.657470703125" y="339.5714416503906"/>
+      </bendpoints>
+    </element>
+    <element uuid="71051d4d-9f6e-4415-a343-661bf5a4676e" manual="true">
+      <element uuid="0a57a744-3f2a-46ac-ae62-efb6b49c7b7e" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth3 : TicketMachine_impl_Instance.thisLcd.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="1056.657470703125" y="339.5714416503906"/>
+        <point x="1056.657470703125" y="352.4285583496094"/>
+        <point x="1050.657470703125" y="352.4285583496094"/>
+      </bendpoints>
+    </element>
+    <element uuid="b0a97f80-15ee-4208-9296-518fed917bc8" manual="true">
+      <element uuid="ac04b8ac-9e84-434c-aa23-e4589a63ba4b" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth4 : TicketMachine_impl_Instance.thisCoinSlot.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="923.5051879882812" y="361.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="be4158f8-9207-40e0-a815-4615d09d57a4" manual="true">
+      <element uuid="0d732433-4b77-4088-962e-834625c15a20" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth4 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.thisCoinSlot.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.5051879882812" y="351.0"/>
+        <point x="903.5051879882812" y="351.0"/>
+        <point x="903.5051879882812" y="361.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="4ad572ba-b703-47bc-a9c1-470262c2aa1c" manual="true">
+      <element uuid="e8eac33d-8536-4b53-9957-d32a49995e71" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth5 : TicketMachine_impl_Instance.thisCardTerminal.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="1066.657470703125" y="649.0"/>
+        <point x="1066.657470703125" y="365.28570556640625"/>
+        <point x="1050.657470703125" y="365.28570556640625"/>
+      </bendpoints>
+    </element>
+    <element uuid="e10c8da0-d0db-41df-9789-6866a683625c" manual="true">
+      <element uuid="f04650d4-23f6-4d20-af9a-349ed1d773f2" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth5 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.thisCardTerminal.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="1050.657470703125" y="378.1428527832031"/>
+        <point x="1066.657470703125" y="378.1428527832031"/>
+        <point x="1066.657470703125" y="649.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="5856c8d6-bb0f-4c20-8814-92330ce79607" manual="true">
+      <element uuid="f22f981b-099a-435b-8833-ce88c05b3870" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth6 : TicketMachine_impl_Instance.thisEthernet -> TicketMachine_impl_Instance.thisGsmAntenna.eth</seg>
+      </bo>
+      <bendpoints>
+        <point x="919.5051879882812" y="311.0"/>
+        <point x="913.5051879882812" y="311.0"/>
+        <point x="913.5051879882812" y="101.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="cac87060-c4a8-41dc-9e60-e24e5aaf5024" manual="true">
+      <element uuid="0eb78d4c-181b-4669-b738-c7bdecc9a021" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>eth6 : TicketMachine_impl_Instance.thisGsmAntenna.eth -> TicketMachine_impl_Instance.thisEthernet</seg>
+      </bo>
+      <bendpoints>
+        <point x="913.5051879882812" y="101.0"/>
+        <point x="913.5051879882812" y="321.0"/>
+        <point x="919.5051879882812" y="321.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="524b20b8-1b01-4410-83eb-de1be03612fa" manual="true">
+      <element uuid="7236c1f0-ee7c-4248-a45d-58777463d26c" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>gsmConn : TicketMachine_impl_Instance.thisGsmAntenna.DataInOut -> TicketMachine_impl_Instance.thisMainProc.gsm</seg>
+      </bo>
+      <bendpoints>
+        <point x="512.9088134765625" y="101.0"/>
+        <point x="512.9088134765625" y="349.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="142c6d21-332a-4924-a7c8-235187779d55" manual="true">
+      <element uuid="671023d1-384c-466d-b425-ffe77d1d3875" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>gsmConn : TicketMachine_impl_Instance.thisMainProc.gsm -> TicketMachine_impl_Instance.thisGsmAntenna.DataInOut</seg>
+      </bo>
+      <bendpoints>
+        <point x="512.9088134765625" y="349.0"/>
+        <point x="512.9088134765625" y="101.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="c548b2ce-0f42-4cc8-a82c-5b7c9b3cb18e" manual="true">
+      <element uuid="4fbb52fd-c4a1-4e02-84a1-ec41f48e8397" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>lcdConn : TicketMachine_impl_Instance.thisMainProc.display -> TicketMachine_impl_Instance.thisLcd.DispImg</seg>
+      </bo>
+      <bendpoints>
+        <point x="1056.657470703125" y="649.0"/>
+        <point x="1056.657470703125" y="389.5714416503906"/>
+      </bendpoints>
+    </element>
+    <element uuid="90beb483-5fc8-43f9-92bd-cb6528ba29da" manual="true">
+      <element uuid="bc9e2e24-08cc-45e8-9781-f82e14b33473" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>printerConn : TicketMachine_impl_Instance.thisMainProc.printer -> TicketMachine_impl_Instance.thisPrinter.PrintData</seg>
+      </bo>
+      <bendpoints>
+        <point x="532.9088134765625" y="449.0"/>
+        <point x="532.9088134765625" y="231.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="e4f16c10-8795-4f70-aa7a-4bf6eaffd7e8" manual="true">
+      <element uuid="bc97751d-ba6c-41cb-8571-1aa7958a3fa2" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>printerStatusConn : TicketMachine_impl_Instance.thisPrinter.PrintComplete -> TicketMachine_impl_Instance.thisMainProc.printerStatus</seg>
+      </bo>
+      <bendpoints>
+        <point x="522.9088134765625" y="181.0"/>
+        <point x="522.9088134765625" y="399.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="86a7e0a3-37cc-4fbd-8801-426c2a43ede9" manual="true">
+      <element uuid="17826ff3-1891-4de3-b324-825d39852e98" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>retChangeConn : TicketMachine_impl_Instance.thisMainProc.changeCoin -> TicketMachine_impl_Instance.thisCoinSlot.ReturnChange</seg>
+      </bo>
+      <bendpoints>
+        <point x="552.9088134765625" y="549.0"/>
+        <point x="552.9088134765625" y="361.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="4dfe769d-2317-4774-a54a-f81d769a0cb1" manual="true">
+      <element uuid="fe6bcc79-135d-4d86-9143-14ea3fc8a9a2" manual="true">
+        <bo>
+          <seg>pvg</seg>
+          <seg>Deployment_Properties::Actual_Connection_Binding</seg>
+          <seg>3ec43c6d-a27f-49db-b80f-fde55edb4c76</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>touchPanelConn : TicketMachine_impl_Instance.thisTouchPanel.UIEvents -> TicketMachine_impl_Instance.thisMainProc.touch</seg>
+      </bo>
+      <bendpoints>
+        <point x="1056.657470703125" y="209.57142639160156"/>
+        <point x="1056.657470703125" y="48.0"/>
+        <point x="502.9088439941406" y="48.0"/>
+        <point x="502.9088439941406" y="299.0"/>
+      </bendpoints>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/projekt/instances/ticketmachine_ticketmachine_impl_instance.aaxl2</seg>
+    </bo>
+    <position x="170.0" y="10.0"/>
+    <size width="1302.18359375" height="819.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties>
+      <property>deployment_properties::actual_memory_binding</property>
+      <property>deployment_properties::actual_processor_binding</property>
+      <property>deployment_properties::actual_connection_binding</property>
+    </enabledAadlProperties>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/projekt/instances/ticketmachine_ticketmachine_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>
